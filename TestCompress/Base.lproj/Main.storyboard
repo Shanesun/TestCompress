@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AvY-f5-bPB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EeV-Cl-8KV">
+            <objects>
+                <navigationController id="AvY-f5-bPB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfJ-9z-GSn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P7s-Os-Hru"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfa-Z2-hq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="-383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkb-b7-OMK">
+                                <rect key="frame" x="20" y="40" width="560" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="wJf-GZ-4xU"/>
+                                </constraints>
+                                <state key="normal" title="选择视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selecteVideoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5k-zP-vCd"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="srs-cF-GM1">
+                                <rect key="frame" x="20" y="135" width="560" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="U0i-ry-E8O"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="roi-sg-S1Z"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-Wd-OdQ">
+                                <rect key="frame" x="20" y="361" width="560" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="JJd-Aj-DuJ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sya-8h-QE3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NDj-kn-hja"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="压缩过的视频：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02O-79-Zdj">
+                                <rect key="frame" x="20" y="336" width="119" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Iyb-VR-OmW"/>
+                                    <constraint firstAttribute="height" constant="21" id="und-ZF-xwn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未压缩视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-eW-cfC">
+                                <rect key="frame" x="20" y="112" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4X5-Ip-GAa"/>
+                                    <constraint firstAttribute="width" constant="85" id="gnX-dr-Knc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LTV-eW-cfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Aqx-nq-vww"/>
+                            <constraint firstItem="nI3-Wd-OdQ" firstAttribute="top" secondItem="02O-79-Zdj" secondAttribute="bottom" constant="4" id="Efh-ps-TLK"/>
+                            <constraint firstItem="srs-cF-GM1" firstAttribute="top" secondItem="LTV-eW-cfC" secondAttribute="bottom" constant="2" id="JyQ-gD-IBz"/>
+                            <constraint firstItem="nI3-Wd-OdQ" firstAttribute="top" secondItem="srs-cF-GM1" secondAttribute="bottom" constant="35" id="KbC-sd-fcS"/>
+                            <constraint firstItem="gkb-b7-OMK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="Qid-4z-Axy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gkb-b7-OMK" secondAttribute="trailing" id="UKF-Gu-VTE"/>
+                            <constraint firstItem="02O-79-Zdj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VWc-LR-rwf"/>
+                            <constraint firstItem="nI3-Wd-OdQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XQp-gy-f6i"/>
+                            <constraint firstItem="srs-cF-GM1" firstAttribute="top" secondItem="gkb-b7-OMK" secondAttribute="bottom" constant="50" id="YJE-pM-vRM"/>
+                            <constraint firstItem="srs-cF-GM1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iii-3h-Qic"/>
+                            <constraint firstItem="nI3-Wd-OdQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jsJ-0D-Xs2"/>
+                            <constraint firstItem="srs-cF-GM1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="npJ-3c-89U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nI3-Wd-OdQ" secondAttribute="bottom" id="oMC-Zn-a68"/>
+                            <constraint firstItem="gkb-b7-OMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYy-PA-sd5"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="gqN-kC-e5F"/>
+                    <connections>
+                        <outlet property="tableVIew2" destination="nI3-Wd-OdQ" id="aOZ-uc-SK6"/>
+                        <outlet property="tableView" destination="srs-cF-GM1" id="IrB-AD-pgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="329"/>
+        </scene>
+    </scenes>
+</document>
