@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface VideoDetailViewController : UIViewController
 
 @property (strong, nonatomic) NSString *videourl;
+
+@property (strong, nonatomic) ALAsset *asset;
 
 @end

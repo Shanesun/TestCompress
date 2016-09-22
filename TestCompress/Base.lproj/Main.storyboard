@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-192" y="-383"/>
         </scene>
-        <!--View Controller-->
+        <!--视频压缩Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                                     <action selector="selecteVideoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5k-zP-vCd"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="srs-cF-GM1">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="srs-cF-GM1">
                                 <rect key="frame" x="20" y="135" width="560" height="191"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -55,7 +55,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="roi-sg-S1Z"/>
                                 </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-Wd-OdQ">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nI3-Wd-OdQ">
                                 <rect key="frame" x="20" y="361" width="560" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -66,7 +66,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NDj-kn-hja"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="压缩过的视频：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02O-79-Zdj">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="压缩过的视频：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02O-79-Zdj">
                                 <rect key="frame" x="20" y="336" width="119" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="119" id="Iyb-VR-OmW"/>
@@ -76,7 +76,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未压缩视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-eW-cfC">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未压缩视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-eW-cfC">
                                 <rect key="frame" x="20" y="112" width="85" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4X5-Ip-GAa"/>
@@ -106,7 +106,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="gqN-kC-e5F"/>
+                    <navigationItem key="navigationItem" title="视频压缩Demo" id="gqN-kC-e5F"/>
                     <connections>
                         <outlet property="tableVIew2" destination="nI3-Wd-OdQ" id="aOZ-uc-SK6"/>
                         <outlet property="tableView" destination="srs-cF-GM1" id="IrB-AD-pgX"/>
