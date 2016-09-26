@@ -7,20 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		349F46241D9232D400065DDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F46231D9232D400065DDF /* main.m */; };
-		349F46271D9232D500065DDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F46261D9232D500065DDF /* AppDelegate.m */; };
-		349F462A1D9232D500065DDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F46291D9232D500065DDF /* ViewController.m */; };
-		349F462D1D9232D500065DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F462B1D9232D500065DDF /* Main.storyboard */; };
-		349F462F1D9232D500065DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349F462E1D9232D500065DDF /* Assets.xcassets */; };
-		349F46321D9232D500065DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349F46301D9232D500065DDF /* LaunchScreen.storyboard */; };
 		349F463D1D9232D500065DDF /* TestALAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */; };
-		349F46481D923CC400065DDF /* VideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F46461D923CC400065DDF /* VideoPickerViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
-		349F46491D923CC400065DDF /* VideoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349F46471D923CC400065DDF /* VideoPickerViewController.xib */; };
-		349F46F81D92A28F00065DDF /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F46F61D92A28F00065DDF /* DataViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
-		349F46F91D92A28F00065DDF /* DataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349F46F71D92A28F00065DDF /* DataViewController.xib */; };
 		349F46FB1D92A3DD00065DDF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 349F46FA1D92A3DD00065DDF /* test.png */; };
+		34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
+		34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */; };
+		34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
+		34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFEC1D991ECF00B3CCA6 /* VideoPickerViewController.xib */; };
+		34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
+		34ABBFF61D99233E00B3CCA6 /* AddWatermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */; };
+		34ABBFFC1D9931EC00B3CCA6 /* watermark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */; };
 		34E7AEDB1D911BF4007DA169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEDA1D911BF4007DA169 /* main.m */; };
-		34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEDD1D911BF4007DA169 /* AppDelegate.m */; };
+		34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEDD1D911BF4007DA169 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34E7AEE11D911BF4007DA169 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEE01D911BF4007DA169 /* ViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E7AEE21D911BF4007DA169 /* Main.storyboard */; };
 		34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E7AEE51D911BF4007DA169 /* Assets.xcassets */; };
@@ -28,8 +25,6 @@
 		34E7AEF41D911BF4007DA169 /* TestCompressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEF31D911BF4007DA169 /* TestCompressTests.m */; };
 		34E7AEFF1D911EA9007DA169 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */; };
 		34E7AF011D913504007DA169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AF001D913504007DA169 /* AVFoundation.framework */; };
-		34E7AF051D9143DD007DA169 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AF031D9143DD007DA169 /* VideoDetailViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
-		34E7AF061D9143DD007DA169 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E7AF041D9143DD007DA169 /* VideoDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,25 +46,20 @@
 
 /* Begin PBXFileReference section */
 		349F46201D9232D400065DDF /* TestALAssetsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestALAssetsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		349F46231D9232D400065DDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		349F46251D9232D500065DDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		349F46261D9232D500065DDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		349F46281D9232D500065DDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		349F46291D9232D500065DDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		349F462C1D9232D500065DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		349F462E1D9232D500065DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		349F46311D9232D500065DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		349F46331D9232D500065DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349F46381D9232D500065DDF /* TestALAssetsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestALAssetsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestALAssetsLibraryTests.m; sourceTree = "<group>"; };
 		349F463E1D9232D500065DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		349F46451D923CC400065DDF /* VideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPickerViewController.h; sourceTree = "<group>"; };
-		349F46461D923CC400065DDF /* VideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPickerViewController.m; sourceTree = "<group>"; };
-		349F46471D923CC400065DDF /* VideoPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPickerViewController.xib; sourceTree = "<group>"; };
-		349F46F51D92A28F00065DDF /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		349F46F61D92A28F00065DDF /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		349F46F71D92A28F00065DDF /* DataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataViewController.xib; sourceTree = "<group>"; };
-		349F46FA1D92A3DD00065DDF /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		349F46FA1D92A3DD00065DDF /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../test.png; sourceTree = "<group>"; };
+		34ABBFE71D991ECF00B3CCA6 /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
+		34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
+		34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDetailViewController.xib; sourceTree = "<group>"; };
+		34ABBFEA1D991ECF00B3CCA6 /* VideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPickerViewController.h; sourceTree = "<group>"; };
+		34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPickerViewController.m; sourceTree = "<group>"; };
+		34ABBFEC1D991ECF00B3CCA6 /* VideoPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPickerViewController.xib; sourceTree = "<group>"; };
+		34ABBFF21D99233E00B3CCA6 /* AddWatermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddWatermarkViewController.h; sourceTree = "<group>"; };
+		34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWatermarkViewController.m; sourceTree = "<group>"; };
+		34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWatermarkViewController.xib; sourceTree = "<group>"; };
+		34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermark@2x.png"; sourceTree = "<group>"; };
 		34E7AED61D911BF4007DA169 /* TestCompress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCompress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E7AEDA1D911BF4007DA169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34E7AEDC1D911BF4007DA169 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,9 +75,6 @@
 		34E7AEF51D911BF4007DA169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		34E7AF001D913504007DA169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		34E7AF021D9143DD007DA169 /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
-		34E7AF031D9143DD007DA169 /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
-		34E7AF041D9143DD007DA169 /* VideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,30 +111,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		349F46211D9232D400065DDF /* TestALAssetsLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				349F46251D9232D500065DDF /* AppDelegate.h */,
-				349F46261D9232D500065DDF /* AppDelegate.m */,
-				349F46281D9232D500065DDF /* ViewController.h */,
-				349F46291D9232D500065DDF /* ViewController.m */,
-				349F462B1D9232D500065DDF /* Main.storyboard */,
-				349F462E1D9232D500065DDF /* Assets.xcassets */,
-				349F46301D9232D500065DDF /* LaunchScreen.storyboard */,
-				349F46331D9232D500065DDF /* Info.plist */,
-				349F46221D9232D400065DDF /* Supporting Files */,
-			);
-			path = TestALAssetsLibrary;
-			sourceTree = "<group>";
-		};
-		349F46221D9232D400065DDF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				349F46231D9232D400065DDF /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		349F463B1D9232D500065DDF /* TestALAssetsLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +120,31 @@
 			path = TestALAssetsLibraryTests;
 			sourceTree = "<group>";
 		};
+		34ABBFE61D991ECF00B3CCA6 /* Compress */ = {
+			isa = PBXGroup;
+			children = (
+				349F46FA1D92A3DD00065DDF /* test.png */,
+				34ABBFE71D991ECF00B3CCA6 /* VideoDetailViewController.h */,
+				34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */,
+				34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */,
+				34ABBFEA1D991ECF00B3CCA6 /* VideoPickerViewController.h */,
+				34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */,
+				34ABBFEC1D991ECF00B3CCA6 /* VideoPickerViewController.xib */,
+			);
+			path = Compress;
+			sourceTree = "<group>";
+		};
+		34ABBFF11D99232200B3CCA6 /* AddWatermark */ = {
+			isa = PBXGroup;
+			children = (
+				34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */,
+				34ABBFF21D99233E00B3CCA6 /* AddWatermarkViewController.h */,
+				34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */,
+				34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */,
+			);
+			path = AddWatermark;
+			sourceTree = "<group>";
+		};
 		34E7AECD1D911BF4007DA169 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +152,6 @@
 				34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */,
 				34E7AED81D911BF4007DA169 /* TestCompress */,
 				34E7AEF21D911BF4007DA169 /* TestCompressTests */,
-				349F46211D9232D400065DDF /* TestALAssetsLibrary */,
 				349F463B1D9232D500065DDF /* TestALAssetsLibraryTests */,
 				34E7AED71D911BF4007DA169 /* Products */,
 			);
@@ -184,20 +171,12 @@
 		34E7AED81D911BF4007DA169 /* TestCompress */ = {
 			isa = PBXGroup;
 			children = (
-				349F46FA1D92A3DD00065DDF /* test.png */,
+				34ABBFF11D99232200B3CCA6 /* AddWatermark */,
+				34ABBFE61D991ECF00B3CCA6 /* Compress */,
 				34E7AEDC1D911BF4007DA169 /* AppDelegate.h */,
 				34E7AEDD1D911BF4007DA169 /* AppDelegate.m */,
 				34E7AEDF1D911BF4007DA169 /* ViewController.h */,
 				34E7AEE01D911BF4007DA169 /* ViewController.m */,
-				34E7AF021D9143DD007DA169 /* VideoDetailViewController.h */,
-				34E7AF031D9143DD007DA169 /* VideoDetailViewController.m */,
-				34E7AF041D9143DD007DA169 /* VideoDetailViewController.xib */,
-				349F46451D923CC400065DDF /* VideoPickerViewController.h */,
-				349F46461D923CC400065DDF /* VideoPickerViewController.m */,
-				349F46471D923CC400065DDF /* VideoPickerViewController.xib */,
-				349F46F51D92A28F00065DDF /* DataViewController.h */,
-				349F46F61D92A28F00065DDF /* DataViewController.m */,
-				349F46F71D92A28F00065DDF /* DataViewController.xib */,
 				34E7AEE21D911BF4007DA169 /* Main.storyboard */,
 				34E7AEE51D911BF4007DA169 /* Assets.xcassets */,
 				34E7AEE71D911BF4007DA169 /* LaunchScreen.storyboard */,
@@ -349,9 +328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349F46321D9232D500065DDF /* LaunchScreen.storyboard in Resources */,
-				349F462F1D9232D500065DDF /* Assets.xcassets in Resources */,
-				349F462D1D9232D500065DDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +342,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
-				349F46F91D92A28F00065DDF /* DataViewController.xib in Resources */,
+				34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */,
 				349F46FB1D92A3DD00065DDF /* test.png in Resources */,
 				34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */,
 				34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */,
-				34E7AF061D9143DD007DA169 /* VideoDetailViewController.xib in Resources */,
-				349F46491D923CC400065DDF /* VideoPickerViewController.xib in Resources */,
+				34ABBFFC1D9931EC00B3CCA6 /* watermark@2x.png in Resources */,
+				34ABBFF61D99233E00B3CCA6 /* AddWatermarkViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349F462A1D9232D500065DDF /* ViewController.m in Sources */,
-				349F46271D9232D500065DDF /* AppDelegate.m in Sources */,
-				349F46241D9232D400065DDF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,12 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */,
 				34E7AEE11D911BF4007DA169 /* ViewController.m in Sources */,
-				349F46481D923CC400065DDF /* VideoPickerViewController.m in Sources */,
 				34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */,
+				34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */,
 				34E7AEDB1D911BF4007DA169 /* main.m in Sources */,
-				349F46F81D92A28F00065DDF /* DataViewController.m in Sources */,
-				34E7AF051D9143DD007DA169 /* VideoDetailViewController.m in Sources */,
+				34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,22 +415,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		349F462B1D9232D500065DDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				349F462C1D9232D500065DDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		349F46301D9232D500065DDF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				349F46311D9232D500065DDF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		34E7AEE21D911BF4007DA169 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -666,6 +624,7 @@
 				349F46401D9232D500065DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		349F46441D9232D500065DDF /* Build configuration list for PBXNativeTarget "TestALAssetsLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -674,6 +633,7 @@
 				349F46421D9232D500065DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E7AED11D911BF4007DA169 /* Build configuration list for PBXProject "TestCompress" */ = {
 			isa = XCConfigurationList;

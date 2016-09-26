@@ -12,7 +12,6 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 
-#import "DataViewController.h"
 
 @interface VideoDetailViewController (){
     AVAssetExportSession *session;
@@ -87,8 +86,7 @@
 #pragma mark- Action
 /*************************************************************************/
 - (IBAction)testButtonClicked:(id)sender {
-    DataViewController *vc = [DataViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (IBAction)qualitySegControlChange:(UISegmentedControl *)sender {

@@ -13,7 +13,9 @@
 #import "VideoDetailViewController.h"
 #import "VideoPickerViewController.h"
 
-@interface ViewController ()<UIImagePickerControllerDelegate>{
+#import "AddWatermarkViewController.h"
+
+@interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
    
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,12 +31,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-//    NSFileManager *fileManager = [NSFileManager defaultManager];
-//    self.videoArr = [fileManager contentsOfDirectoryAtPath:[self origVideoPath] error:nil];
-//    self.videoArr2 = [fileManager contentsOfDirectoryAtPath:[self savaUserPath] error:nil];
-//    
-//    [self.tableView reloadData];
-//    [self.tableVIew2 reloadData];
+
 }
 
 - (void)viewDidLoad {
@@ -103,20 +100,21 @@
 }
 
 
-- (IBAction)selecteVideoButtonClicked:(id)sender {
-  
-//    [self showImagePickerVC];
-    [self showALVC];
-    
-}
-
-#pragma mark- private methods
-- (void)showALVC
+- (IBAction)selecteVideoButtonClicked:(id)sender
 {
     VideoPickerViewController *videoPickerVC = [VideoPickerViewController new];
     [self.navigationController pushViewController:videoPickerVC animated:YES];
-    }
+    
+//    [self showImagePickerVC];
+}
+- (IBAction)addWatermarkClicked:(id)sender {
+    AddWatermarkViewController *addWaterVC = [AddWatermarkViewController new];
+    [self.navigationController pushViewController:addWaterVC animated:YES];
+}
 
+
+
+#pragma mark- private methods
 - (void)showImagePickerVC
 {
     /*注：使用，需要实现以下协议：UIImagePickerControllerDelegate,
@@ -144,31 +142,8 @@
     
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-//    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
-//    
-//    if (CFStringCompare ((__bridge CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
-//        NSURL *videoUrl=(NSURL*)[info objectForKey:UIImagePickerControllerMediaURL];
-//        NSString *moviePath = [videoUrl path];
-//        
-//        //        if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath)) {
-//        //            UISaveVideoAtPathToSavedPhotosAlbum (moviePath, nil, nil, nil);
-//        //        }
-//        //        [self videoCompressionWithUrl:videoUrl];
-//        
-//        
-//        NSLog(@"压缩前大小 %f MB",[self getfileSize: videoUrl.path]);
-//        
-        NSString *destFilePath = [[self origVideoPath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.MOV",[[[NSUUID UUID]UUIDString]substringToIndex:8]]];
-//        NSURL *destUrl = [NSURL fileURLWithPath:destFilePath];
-//        
-//        //将视频文件copy到沙盒目录中
-//        NSFileManager *manager = [NSFileManager defaultManager];
-//        NSError *error = nil;
-//        [manager copyItemAtURL:videoUrl toURL:destUrl error:&error];
-//        
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    }
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{      
+    
 }
 
 

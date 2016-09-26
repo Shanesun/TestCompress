@@ -7,8 +7,6 @@
 //
 
 #import "VideoPickerViewController.h"
-#import <AssetsLibrary/AssetsLibrary.h>
-
 #import "VideoDetailViewController.h"
 
 @interface VideoPickerViewController ()
@@ -70,8 +68,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     ALAsset *asset =  assetsArray[assetsArray.count - indexPath.row -1];
+    
+    if (self.selectBlock) {
+        self.selectBlock(asset);
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
+    
     ALAssetRepresentation* representation = [asset defaultRepresentation];
     VideoDetailViewController *vc = [VideoDetailViewController new];
     vc.videourl = [[representation url] absoluteString];
