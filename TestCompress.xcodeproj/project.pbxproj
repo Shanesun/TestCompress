@@ -16,6 +16,13 @@
 		34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34ABBFF61D99233E00B3CCA6 /* AddWatermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */; };
 		34ABBFFC1D9931EC00B3CCA6 /* watermark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */; };
+		34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */; };
+		34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB35241D9A50DC00F5E6A1 /* ZYBVideoManager.m */; };
+		34DB35301D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB35281D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m */; };
+		34DB35311D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB352A1D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m */; };
+		34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34DB352B1D9A5BDF00F5E6A1 /* SVProgressHUD.bundle */; };
+		34DB35331D9A5BDF00F5E6A1 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB352D1D9A5BDF00F5E6A1 /* SVProgressHUD.m */; };
+		34DB35341D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB352F1D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m */; };
 		34E7AEDB1D911BF4007DA169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEDA1D911BF4007DA169 /* main.m */; };
 		34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEDD1D911BF4007DA169 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34E7AEE11D911BF4007DA169 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEE01D911BF4007DA169 /* ViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
@@ -60,6 +67,19 @@
 		34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWatermarkViewController.m; sourceTree = "<group>"; };
 		34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWatermarkViewController.xib; sourceTree = "<group>"; };
 		34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermark@2x.png"; sourceTree = "<group>"; };
+		34DB35201D9A508600F5E6A1 /* ZYBVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBVideoHelper.h; sourceTree = "<group>"; };
+		34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBVideoHelper.m; sourceTree = "<group>"; };
+		34DB35231D9A50DC00F5E6A1 /* ZYBVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBVideoManager.h; sourceTree = "<group>"; };
+		34DB35241D9A50DC00F5E6A1 /* ZYBVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBVideoManager.m; sourceTree = "<group>"; };
+		34DB35271D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		34DB35281D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		34DB35291D9A5BDF00F5E6A1 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		34DB352A1D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		34DB352B1D9A5BDF00F5E6A1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		34DB352C1D9A5BDF00F5E6A1 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		34DB352D1D9A5BDF00F5E6A1 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		34DB352E1D9A5BDF00F5E6A1 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		34DB352F1D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		34E7AED61D911BF4007DA169 /* TestCompress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCompress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E7AEDA1D911BF4007DA169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34E7AEDC1D911BF4007DA169 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,11 +165,39 @@
 			path = AddWatermark;
 			sourceTree = "<group>";
 		};
+		34DB351F1D9A506700F5E6A1 /* ZYBVideoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				34DB35201D9A508600F5E6A1 /* ZYBVideoHelper.h */,
+				34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */,
+				34DB35231D9A50DC00F5E6A1 /* ZYBVideoManager.h */,
+				34DB35241D9A50DC00F5E6A1 /* ZYBVideoManager.m */,
+			);
+			path = ZYBVideoHelper;
+			sourceTree = "<group>";
+		};
+		34DB35261D9A5BDE00F5E6A1 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				34DB35271D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.h */,
+				34DB35281D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m */,
+				34DB35291D9A5BDF00F5E6A1 /* SVProgressAnimatedView.h */,
+				34DB352A1D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m */,
+				34DB352B1D9A5BDF00F5E6A1 /* SVProgressHUD.bundle */,
+				34DB352C1D9A5BDF00F5E6A1 /* SVProgressHUD.h */,
+				34DB352D1D9A5BDF00F5E6A1 /* SVProgressHUD.m */,
+				34DB352E1D9A5BDF00F5E6A1 /* SVRadialGradientLayer.h */,
+				34DB352F1D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		34E7AECD1D911BF4007DA169 = {
 			isa = PBXGroup;
 			children = (
 				34E7AF001D913504007DA169 /* AVFoundation.framework */,
 				34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */,
+				34DB35261D9A5BDE00F5E6A1 /* SVProgressHUD */,
 				34E7AED81D911BF4007DA169 /* TestCompress */,
 				34E7AEF21D911BF4007DA169 /* TestCompressTests */,
 				349F463B1D9232D500065DDF /* TestALAssetsLibraryTests */,
@@ -171,6 +219,7 @@
 		34E7AED81D911BF4007DA169 /* TestCompress */ = {
 			isa = PBXGroup;
 			children = (
+				34DB351F1D9A506700F5E6A1 /* ZYBVideoHelper */,
 				34ABBFF11D99232200B3CCA6 /* AddWatermark */,
 				34ABBFE61D991ECF00B3CCA6 /* Compress */,
 				34E7AEDC1D911BF4007DA169 /* AppDelegate.h */,
@@ -294,7 +343,8 @@
 					};
 					34E7AED51D911BF4007DA169 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = FY9VNRD73A;
+						DevelopmentTeam = 43WUYUU873;
+						ProvisioningStyle = Automatic;
 					};
 					34E7AEEE1D911BF4007DA169 = {
 						CreatedOnToolsVersion = 7.3;
@@ -343,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
+				34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
 				34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */,
 				349F46FB1D92A3DD00065DDF /* test.png in Resources */,
@@ -383,10 +434,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */,
+				34DB35311D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m in Sources */,
 				34E7AEE11D911BF4007DA169 /* ViewController.m in Sources */,
+				34DB35301D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m in Sources */,
 				34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */,
+				34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */,
+				34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */,
+				34DB35341D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m in Sources */,
 				34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */,
 				34E7AEDB1D911BF4007DA169 /* main.m in Sources */,
+				34DB35331D9A5BDF00F5E6A1 /* SVProgressHUD.m in Sources */,
 				34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,12 +624,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: shane li (8D3X727J4U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 43WUYUU873;
 				INFOPLIST_FILE = TestCompress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anzogame.test;
+				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "48d3a9ee-3ae0-4cbf-a5c9-81f8e1fb84ac";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -581,12 +639,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: shane li (8D3X727J4U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 43WUYUU873;
 				INFOPLIST_FILE = TestCompress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anzogame.test;
+				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "48d3a9ee-3ae0-4cbf-a5c9-81f8e1fb84ac";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

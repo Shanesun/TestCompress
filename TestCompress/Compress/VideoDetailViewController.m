@@ -11,6 +11,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
+#import "ZYBVideoHelper.h"
 
 
 @interface VideoDetailViewController (){
@@ -146,7 +147,7 @@
 }
 
 - (IBAction)saveCompressVideo:(id)sender {
-    [self saveVideo:self.compressVideoPath];
+    [ZYBVideoHelper saveVideo:self.compressVideoPath];
 }
 
 
@@ -160,7 +161,7 @@
     //创建视频资源导出会话
     session = [[AVAssetExportSession alloc] initWithAsset:urlAsset presetName:self.presetName];
     //创建导出视频的URL
-    self.compressVideoPath = [[self savaUserPath] stringByAppendingPathComponent:[self.assetRepresentation filename]];
+    self.compressVideoPath = [[ZYBVideoHelper savaUserPath] stringByAppendingPathComponent:[self.assetRepresentation filename]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
     if ([fileManager fileExistsAtPath:self.compressVideoPath]) {
@@ -195,7 +196,7 @@
             
             weakSelf.compNameLabel.text = [[NSString alloc] initWithFormat:@"名称：%@",[self.assetRepresentation filename]];
             weakSelf.compTimeLabel.text = [[NSString alloc] initWithFormat:@"时长：%d秒", [[self.asset valueForProperty:ALAssetPropertyDuration] intValue]];
-            weakSelf.compressSizeLabel.text = [[NSString alloc] initWithFormat:@"大小：%.2fMB", [self getfileSize:self.compressVideoPath]];
+            weakSelf.compressSizeLabel.text = [[NSString alloc] initWithFormat:@"大小：%.2fMB", [ZYBVideoHelper getfileSize:self.compressVideoPath]];
             weakSelf.compressFenbianlvLabel.text =[[NSString alloc] initWithFormat:@"分辨率：%dx%d px",(int)track.naturalSize.width, (int)track.naturalSize.height];
             weakSelf.compFrameRateLable.text = [[NSString alloc] initWithFormat:@"帧率：%.2f",track.nominalFrameRate];
             weakSelf.compBpsLabel.text = [[NSString alloc] initWithFormat:@"bps：%.2fMbit/s",track.estimatedDataRate/1048576.0];
@@ -241,39 +242,6 @@
 }
 
 
-- (void)saveVideo:(NSString *)videoPath
-{
-    //    videoPath是你视频文件的路径，我这里是加载工程中的
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    [library writeVideoAtPathToSavedPhotosAlbum:[NSURL fileURLWithPath:videoPath]
-                                completionBlock:^(NSURL *assetURL, NSError *error) {
-                                    if (error) {
-                                        NSLog(@"Save video fail:%@",error);
-                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"失败" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-                                        [alert show];
-                                    } else {
-                                        NSLog(@"Save video succeed.");
-                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"已经保存到相册" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-                                        [alert show];
-                                        
-                                    }
-                                }];
-}
-- (NSString *)savaUserPath{
-    NSString *path = nil;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    path = [paths objectAtIndex:0];
-    
-    path = [path stringByAppendingPathComponent:@"compVideo"];
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    if (![fileManager fileExistsAtPath:path]) {
-        [fileManager createDirectoryAtPath:path withIntermediateDirectories:NO attributes:nil error:nil];
-    }
-    
-    return path;
-}
-
 - (NSString *)origVideoPath{
     NSString *path = nil;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -289,11 +257,6 @@
     return path;
 }
 
-- (CGFloat)getfileSize:(NSString *)path
-{
-    NSDictionary *outputFileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
-    NSLog (@"file size: %f", (unsigned long long)[outputFileAttributes fileSize]/1024.00 /1024.00);
-    return (CGFloat)[outputFileAttributes fileSize]/1024.00 /1024.00;
-}
+
 
 @end

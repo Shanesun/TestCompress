@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -14,7 +14,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rV-qa-pnZ">
@@ -24,33 +24,31 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNP-9o-zDo">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="133" id="7Zp-lA-hoc"/>
                         <constraint firstAttribute="height" constant="30" id="NT9-R0-GNo"/>
                     </constraints>
-                    <state key="normal" title="选择视频"/>
+                    <state key="normal" title="选择视频">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="selecteVideoClicked:" destination="-1" eventType="touchUpInside" id="0gT-4X-J7W"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNQ-RH-W6b">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="bh1-8t-Qjk"/>
-                        <constraint firstAttribute="width" constant="133" id="ijv-LX-khL"/>
+                        <constraint firstAttribute="height" constant="30" id="57v-n6-jol"/>
+                        <constraint firstAttribute="width" constant="133" id="wa2-ng-efa"/>
                     </constraints>
-                    <state key="normal" title="添加水印"/>
+                    <state key="normal" title="添加水印">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="addWatermarkClicked:" destination="-1" eventType="touchUpInside" id="eqw-0L-bcW"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-jA-Jkf">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="dD7-bq-ZFa"/>
-                        <constraint firstAttribute="width" constant="133" id="gV9-BB-DAO"/>
-                    </constraints>
-                    <state key="normal" title="压缩并保存到相册"/>
-                    <connections>
-                        <action selector="exportVideoAndSave:" destination="-1" eventType="touchUpInside" id="l4I-oO-vb4"/>
                     </connections>
                 </button>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrD-BZ-gJN">
@@ -63,24 +61,65 @@
                                 <action selector="playPauseClicked:" destination="-1" id="bG9-dO-7ta"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="AXi-1v-J1I"/>
+                        <barButtonItem title="高质量保存" id="vPC-c1-9Bn">
+                            <connections>
+                                <action selector="exportVideoAndSave:" destination="-1" id="rCx-3L-3FR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="1" title="压缩保存" id="rmC-nV-aQF">
+                            <connections>
+                                <action selector="exportVideoAndSave:" destination="-1" id="sps-aQ-slS"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V04-OZ-wRo">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jtH-rb-oSG"/>
+                        <constraint firstAttribute="width" constant="133" id="xqa-cW-xiN"/>
+                    </constraints>
+                    <state key="normal" title="添加滤镜">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addFilterClicked:" destination="-1" eventType="touchUpInside" id="Mbd-8i-cew"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-vT-4H9">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Sgt-E2-SwT"/>
+                        <constraint firstAttribute="width" constant="133" id="aA8-7V-pJg"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="jm7-Ef-wfc"/>
+                        <constraint firstAttribute="height" constant="30" id="m6l-wH-mw7"/>
+                    </constraints>
+                    <state key="normal" title="修改背景音乐">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="mNP-9o-zDo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Ze-ou-wFe"/>
-                <constraint firstItem="tNQ-RH-W6b" firstAttribute="top" secondItem="9rV-qa-pnZ" secondAttribute="bottom" constant="45" id="ECR-xW-RQR"/>
-                <constraint firstItem="dj1-jA-Jkf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ID7-yW-yio"/>
-                <constraint firstAttribute="trailing" secondItem="tNQ-RH-W6b" secondAttribute="trailing" id="IL8-4y-WLt"/>
-                <constraint firstItem="dj1-jA-Jkf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="65" id="Mux-DS-DnL"/>
+                <constraint firstItem="tNQ-RH-W6b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9mv-6v-ENi"/>
+                <constraint firstItem="V04-OZ-wRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LLF-IB-jEl"/>
                 <constraint firstItem="9rV-qa-pnZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NIr-aI-aHS"/>
+                <constraint firstItem="tNQ-RH-W6b" firstAttribute="top" secondItem="V04-OZ-wRo" secondAttribute="bottom" constant="12" id="Ob9-wx-4OE"/>
                 <constraint firstAttribute="trailing" secondItem="9rV-qa-pnZ" secondAttribute="trailing" id="coF-Np-RCs"/>
+                <constraint firstItem="3NB-vT-4H9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cro-nz-oqh"/>
                 <constraint firstItem="mrD-BZ-gJN" firstAttribute="top" secondItem="9rV-qa-pnZ" secondAttribute="bottom" id="eZS-yV-Qyd"/>
+                <constraint firstItem="V04-OZ-wRo" firstAttribute="top" secondItem="mNP-9o-zDo" secondAttribute="bottom" constant="12" id="fKO-AO-D5j"/>
                 <constraint firstItem="9rV-qa-pnZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gST-Wi-Py9"/>
+                <constraint firstItem="3NB-vT-4H9" firstAttribute="top" secondItem="tNQ-RH-W6b" secondAttribute="bottom" constant="12" id="qP0-dr-GLk"/>
                 <constraint firstAttribute="trailing" secondItem="mrD-BZ-gJN" secondAttribute="trailing" id="s7W-bq-EkM"/>
                 <constraint firstItem="mNP-9o-zDo" firstAttribute="top" secondItem="9rV-qa-pnZ" secondAttribute="bottom" constant="45" id="tRS-5g-MgB"/>
                 <constraint firstItem="mrD-BZ-gJN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u2k-dA-8kd"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>
