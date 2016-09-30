@@ -13,7 +13,7 @@
 #import "VideoDetailViewController.h"
 #import "VideoPickerViewController.h"
 
-#import "AddWatermarkViewController.h"
+#import "EditVideoViewController.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
    
@@ -108,7 +108,7 @@
 //    [self showImagePickerVC];
 }
 - (IBAction)addWatermarkClicked:(id)sender {
-    AddWatermarkViewController *addWaterVC = [AddWatermarkViewController new];
+    EditVideoViewController *addWaterVC = [EditVideoViewController new];
     [self.navigationController pushViewController:addWaterVC animated:YES];
 }
 

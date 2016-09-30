@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343AE21C1D9BBE76008310DF /* Music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 343AE21B1D9BBE76008310DF /* Music.m4a */; };
 		349F463D1D9232D500065DDF /* TestALAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */; };
 		349F46FB1D92A3DD00065DDF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 349F46FA1D92A3DD00065DDF /* test.png */; };
 		34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */; };
 		34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFEC1D991ECF00B3CCA6 /* VideoPickerViewController.xib */; };
-		34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
-		34ABBFF61D99233E00B3CCA6 /* AddWatermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */; };
+		34ABBFF51D99233E00B3CCA6 /* EditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFF31D99233E00B3CCA6 /* EditVideoViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
+		34ABBFF61D99233E00B3CCA6 /* EditVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFF41D99233E00B3CCA6 /* EditVideoViewController.xib */; };
 		34ABBFFC1D9931EC00B3CCA6 /* watermark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */; };
 		34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */; };
 		34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DB35241D9A50DC00F5E6A1 /* ZYBVideoManager.m */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		343AE21B1D9BBE76008310DF /* Music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Music.m4a; sourceTree = "<group>"; };
 		349F46201D9232D400065DDF /* TestALAssetsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestALAssetsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F46381D9232D500065DDF /* TestALAssetsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestALAssetsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestALAssetsLibraryTests.m; sourceTree = "<group>"; };
@@ -63,9 +65,9 @@
 		34ABBFEA1D991ECF00B3CCA6 /* VideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPickerViewController.h; sourceTree = "<group>"; };
 		34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPickerViewController.m; sourceTree = "<group>"; };
 		34ABBFEC1D991ECF00B3CCA6 /* VideoPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPickerViewController.xib; sourceTree = "<group>"; };
-		34ABBFF21D99233E00B3CCA6 /* AddWatermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddWatermarkViewController.h; sourceTree = "<group>"; };
-		34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWatermarkViewController.m; sourceTree = "<group>"; };
-		34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWatermarkViewController.xib; sourceTree = "<group>"; };
+		34ABBFF21D99233E00B3CCA6 /* EditVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVideoViewController.h; sourceTree = "<group>"; };
+		34ABBFF31D99233E00B3CCA6 /* EditVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVideoViewController.m; sourceTree = "<group>"; };
+		34ABBFF41D99233E00B3CCA6 /* EditVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditVideoViewController.xib; sourceTree = "<group>"; };
 		34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermark@2x.png"; sourceTree = "<group>"; };
 		34DB35201D9A508600F5E6A1 /* ZYBVideoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBVideoHelper.h; sourceTree = "<group>"; };
 		34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBVideoHelper.m; sourceTree = "<group>"; };
@@ -157,10 +159,11 @@
 		34ABBFF11D99232200B3CCA6 /* AddWatermark */ = {
 			isa = PBXGroup;
 			children = (
+				343AE21B1D9BBE76008310DF /* Music.m4a */,
 				34ABBFFB1D9931EC00B3CCA6 /* watermark@2x.png */,
-				34ABBFF21D99233E00B3CCA6 /* AddWatermarkViewController.h */,
-				34ABBFF31D99233E00B3CCA6 /* AddWatermarkViewController.m */,
-				34ABBFF41D99233E00B3CCA6 /* AddWatermarkViewController.xib */,
+				34ABBFF21D99233E00B3CCA6 /* EditVideoViewController.h */,
+				34ABBFF31D99233E00B3CCA6 /* EditVideoViewController.m */,
+				34ABBFF41D99233E00B3CCA6 /* EditVideoViewController.xib */,
 			);
 			path = AddWatermark;
 			sourceTree = "<group>";
@@ -343,7 +346,7 @@
 					};
 					34E7AED51D911BF4007DA169 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 43WUYUU873;
+						DevelopmentTeam = FY9VNRD73A;
 						ProvisioningStyle = Automatic;
 					};
 					34E7AEEE1D911BF4007DA169 = {
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343AE21C1D9BBE76008310DF /* Music.m4a in Resources */,
 				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
 				34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
@@ -400,7 +404,7 @@
 				34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */,
 				34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */,
 				34ABBFFC1D9931EC00B3CCA6 /* watermark@2x.png in Resources */,
-				34ABBFF61D99233E00B3CCA6 /* AddWatermarkViewController.xib in Resources */,
+				34ABBFF61D99233E00B3CCA6 /* EditVideoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +445,7 @@
 				34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */,
 				34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */,
 				34DB35341D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m in Sources */,
-				34ABBFF51D99233E00B3CCA6 /* AddWatermarkViewController.m in Sources */,
+				34ABBFF51D99233E00B3CCA6 /* EditVideoViewController.m in Sources */,
 				34E7AEDB1D911BF4007DA169 /* main.m in Sources */,
 				34DB35331D9A5BDF00F5E6A1 /* SVProgressHUD.m in Sources */,
 				34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */,
@@ -623,14 +627,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: shane li (8D3X727J4U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 43WUYUU873;
+				DEVELOPMENT_TEAM = FY9VNRD73A;
 				INFOPLIST_FILE = TestCompress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anzogame.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -638,14 +643,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: shane li (8D3X727J4U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 43WUYUU873;
+				DEVELOPMENT_TEAM = FY9VNRD73A;
 				INFOPLIST_FILE = TestCompress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anzogame.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

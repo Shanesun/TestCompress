@@ -13,6 +13,7 @@
 + (AVAssetExportSession *)exportVideoWithAsset:(AVAsset *)asset
                                     presetName:(NSString *)presetName
                               videoComposition:(AVVideoComposition *)videoComposition
+                                      audioMix:(AVMutableAudioMix *)audioMix
                                      outputURL:(NSString *)outputPath
                                 completedBlock:(ExportVideoCompletedBlock)completedBlock
 {
@@ -26,6 +27,7 @@
     exportSession.videoComposition = videoComposition;
     exportSession.outputURL = [NSURL fileURLWithPath:outputPath];
     exportSession.outputFileType=AVFileTypeQuickTimeMovie;
+    exportSession.audioMix = audioMix;
     
     [exportSession exportAsynchronouslyWithCompletionHandler:^(void){
         switch (exportSession.status) {

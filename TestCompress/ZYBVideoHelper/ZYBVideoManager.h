@@ -16,6 +16,7 @@ typedef void(^ExportVideoCompletedBlock)(NSError *error);
 + (AVAssetExportSession *)exportVideoWithAsset:(AVAsset *)asset
                                     presetName:(NSString *)presetName
                               videoComposition:(AVVideoComposition *)videoComposition
+                                      audioMix:(AVMutableAudioMix *)audioMix
                                      outputURL:(NSString *)outputPath
                                 completedBlock:(ExportVideoCompletedBlock)completedBlock;
 
