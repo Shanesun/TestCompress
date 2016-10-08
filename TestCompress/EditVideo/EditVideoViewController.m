@@ -140,7 +140,7 @@
 
 - (IBAction)addFilterClicked:(id)sender
 {
-    self.filter = [CIFilter filterWithName:@"CISepiaTone"];
+    self.filter = [CIFilter filterWithName:@"CIPhotoEffectMono"];
     
     self.videoComposition = [AVMutableVideoComposition videoCompositionWithAsset:self.asset applyingCIFiltersWithHandler:^(AVAsynchronousCIImageFilteringRequest * _Nonnull request) {
         CIImage *source = [request.sourceImage imageByClampingToExtent];
