@@ -59,13 +59,29 @@
                                     <action selector="addWatermarkClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Rn-X1-wYD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-VU-eD1">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="O6l-qT-9VL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="uMM-xv-Dcy"/>
+                                </constraints>
+                                <state key="normal" title="滤镜">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0Y-IT-dM6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="top" secondItem="gkb-b7-OMK" secondAttribute="bottom" constant="19" id="8m4-Um-Mkz"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="Qid-4z-Axy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gkb-b7-OMK" secondAttribute="trailing" id="UKF-Gu-VTE"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V7x-vr-pLG"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xzl-rQ-JPe"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="abF-n2-rGA"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="top" secondItem="zGz-OH-I5z" secondAttribute="bottom" constant="19" id="nMt-wP-azL"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYy-PA-sd5"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ulQ-ma-OlG"/>
                         </constraints>

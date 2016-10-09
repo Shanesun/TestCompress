@@ -33,6 +33,19 @@
 		34E7AEF41D911BF4007DA169 /* TestCompressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEF31D911BF4007DA169 /* TestCompressTests.m */; };
 		34E7AEFF1D911EA9007DA169 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */; };
 		34E7AF011D913504007DA169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AF001D913504007DA169 /* AVFoundation.framework */; };
+		34F8F25F1DA8DFF30046F5C3 /* FilterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F25E1DA8DFF30046F5C3 /* FilterListViewController.swift */; };
+		34F8F2611DA8E0070046F5C3 /* FilterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2601DA8E0070046F5C3 /* FilterDetailViewController.swift */; };
+		34F8F2641DA8E02C0046F5C3 /* LabeledSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2621DA8E02C0046F5C3 /* LabeledSliderView.swift */; };
+		34F8F2651DA8E02C0046F5C3 /* ParameterAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2631DA8E02C0046F5C3 /* ParameterAdjustmentView.swift */; };
+		34F8F2681DA8E03D0046F5C3 /* ScalarFilterParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2661DA8E03D0046F5C3 /* ScalarFilterParameter.swift */; };
+		34F8F2691DA8E03D0046F5C3 /* FilteredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2671DA8E03D0046F5C3 /* FilteredImageView.swift */; };
+		34F8F26E1DA8F4FB0046F5C3 /* duckling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34F8F26D1DA8F4FB0046F5C3 /* duckling.jpg */; };
+		34F8F2711DA8F5B90046F5C3 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F26F1DA8F5B90046F5C3 /* PhotoFilterViewController.swift */; };
+		34F8F2721DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2701DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift */; };
+		34F8F27A1DA8F6C90046F5C3 /* FiltersEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2791DA8F6C90046F5C3 /* FiltersEnterViewController.swift */; };
+		34F8F27D1DA8FA450046F5C3 /* FilterDesWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F27C1DA8FA450046F5C3 /* FilterDesWebViewController.swift */; };
+		34F8F27F1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F8F27E1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib */; };
+		34F8F2811DA9DAF60046F5C3 /* PhotoFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F8F2801DA9DAF60046F5C3 /* PhotoFilterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +110,20 @@
 		34E7AEF51D911BF4007DA169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		34E7AF001D913504007DA169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		34F8F25D1DA8DFF20046F5C3 /* TestCompress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCompress-Bridging-Header.h"; sourceTree = "<group>"; };
+		34F8F25E1DA8DFF30046F5C3 /* FilterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewController.swift; sourceTree = "<group>"; };
+		34F8F2601DA8E0070046F5C3 /* FilterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDetailViewController.swift; sourceTree = "<group>"; };
+		34F8F2621DA8E02C0046F5C3 /* LabeledSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabeledSliderView.swift; sourceTree = "<group>"; };
+		34F8F2631DA8E02C0046F5C3 /* ParameterAdjustmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterAdjustmentView.swift; sourceTree = "<group>"; };
+		34F8F2661DA8E03D0046F5C3 /* ScalarFilterParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarFilterParameter.swift; sourceTree = "<group>"; };
+		34F8F2671DA8E03D0046F5C3 /* FilteredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredImageView.swift; sourceTree = "<group>"; };
+		34F8F26D1DA8F4FB0046F5C3 /* duckling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duckling.jpg; sourceTree = "<group>"; };
+		34F8F26F1DA8F5B90046F5C3 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
+		34F8F2701DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		34F8F2791DA8F6C90046F5C3 /* FiltersEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersEnterViewController.swift; sourceTree = "<group>"; };
+		34F8F27C1DA8FA450046F5C3 /* FilterDesWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDesWebViewController.swift; sourceTree = "<group>"; };
+		34F8F27E1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterDesWebViewController.xib; sourceTree = "<group>"; };
+		34F8F2801DA9DAF60046F5C3 /* PhotoFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoFilterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +252,7 @@
 				34DB351F1D9A506700F5E6A1 /* ZYBVideoHelper */,
 				34BD620C1DA88D54004BF6AA /* EditVideo */,
 				34ABBFE61D991ECF00B3CCA6 /* Compress */,
+				34F8F25C1DA8DDB00046F5C3 /* Filter */,
 				34E7AEDC1D911BF4007DA169 /* AppDelegate.h */,
 				34E7AEDD1D911BF4007DA169 /* AppDelegate.m */,
 				34E7AEDF1D911BF4007DA169 /* ViewController.h */,
@@ -253,6 +281,59 @@
 				34E7AEF51D911BF4007DA169 /* Info.plist */,
 			);
 			path = TestCompressTests;
+			sourceTree = "<group>";
+		};
+		34F8F25C1DA8DDB00046F5C3 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F25D1DA8DFF20046F5C3 /* TestCompress-Bridging-Header.h */,
+				34F8F2791DA8F6C90046F5C3 /* FiltersEnterViewController.swift */,
+				34F8F26A1DA8E2230046F5C3 /* Views */,
+				34F8F2731DA8F5C70046F5C3 /* EditFilter */,
+				34F8F2741DA8F5D20046F5C3 /* ViewFitlter */,
+				34F8F27B1DA8FA140046F5C3 /* FilterDes */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		34F8F26A1DA8E2230046F5C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F26D1DA8F4FB0046F5C3 /* duckling.jpg */,
+				34F8F2621DA8E02C0046F5C3 /* LabeledSliderView.swift */,
+				34F8F2631DA8E02C0046F5C3 /* ParameterAdjustmentView.swift */,
+				34F8F2661DA8E03D0046F5C3 /* ScalarFilterParameter.swift */,
+				34F8F2671DA8E03D0046F5C3 /* FilteredImageView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		34F8F2731DA8F5C70046F5C3 /* EditFilter */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F25E1DA8DFF30046F5C3 /* FilterListViewController.swift */,
+				34F8F2601DA8E0070046F5C3 /* FilterDetailViewController.swift */,
+			);
+			name = EditFilter;
+			sourceTree = "<group>";
+		};
+		34F8F2741DA8F5D20046F5C3 /* ViewFitlter */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F26F1DA8F5B90046F5C3 /* PhotoFilterViewController.swift */,
+				34F8F2801DA9DAF60046F5C3 /* PhotoFilterViewController.xib */,
+				34F8F2701DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift */,
+			);
+			name = ViewFitlter;
+			sourceTree = "<group>";
+		};
+		34F8F27B1DA8FA140046F5C3 /* FilterDes */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F27C1DA8FA450046F5C3 /* FilterDesWebViewController.swift */,
+				34F8F27E1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib */,
+			);
+			name = FilterDes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +428,7 @@
 					34E7AED51D911BF4007DA169 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = FY9VNRD73A;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					34E7AEEE1D911BF4007DA169 = {
@@ -400,10 +482,13 @@
 				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
 				34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
+				34F8F2811DA9DAF60046F5C3 /* PhotoFilterViewController.xib in Resources */,
 				34BD62151DA88D54004BF6AA /* watermark@2x.png in Resources */,
 				34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */,
 				349F46FB1D92A3DD00065DDF /* test.png in Resources */,
+				34F8F27F1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib in Resources */,
 				34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */,
+				34F8F26E1DA8F4FB0046F5C3 /* duckling.jpg in Resources */,
 				34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,12 +525,22 @@
 				34BD62121DA88D54004BF6AA /* EditVideoViewController.m in Sources */,
 				34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */,
 				34DB35311D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m in Sources */,
+				34F8F2681DA8E03D0046F5C3 /* ScalarFilterParameter.swift in Sources */,
+				34F8F2651DA8E02C0046F5C3 /* ParameterAdjustmentView.swift in Sources */,
+				34F8F2721DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift in Sources */,
 				34E7AEE11D911BF4007DA169 /* ViewController.m in Sources */,
+				34F8F2641DA8E02C0046F5C3 /* LabeledSliderView.swift in Sources */,
 				34DB35301D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m in Sources */,
+				34F8F27A1DA8F6C90046F5C3 /* FiltersEnterViewController.swift in Sources */,
 				34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */,
 				34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */,
+				34F8F25F1DA8DFF30046F5C3 /* FilterListViewController.swift in Sources */,
+				34F8F2691DA8E03D0046F5C3 /* FilteredImageView.swift in Sources */,
 				34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */,
+				34F8F2711DA8F5B90046F5C3 /* PhotoFilterViewController.swift in Sources */,
 				34DB35341D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m in Sources */,
+				34F8F2611DA8E0070046F5C3 /* FilterDetailViewController.swift in Sources */,
+				34F8F27D1DA8FA450046F5C3 /* FilterDesWebViewController.swift in Sources */,
 				34E7AEDB1D911BF4007DA169 /* main.m in Sources */,
 				34DB35331D9A5BDF00F5E6A1 /* SVProgressHUD.m in Sources */,
 				34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */,
@@ -627,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shane li (8D3X727J4U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FY9VNRD73A;
@@ -636,6 +732,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCompress/Filter/TestCompress-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -643,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: shane li (8D3X727J4U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FY9VNRD73A;
@@ -652,12 +752,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCompress/Filter/TestCompress-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		34E7AEFC1D911BF4007DA169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TestCompressTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -670,6 +773,7 @@
 		34E7AEFD1D911BF4007DA169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TestCompressTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

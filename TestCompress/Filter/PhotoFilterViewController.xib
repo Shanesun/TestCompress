@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoFilterViewController" customModule="TestCompress" customModuleProvider="target">
+            <connections>
+                <outlet property="filteredImageView" destination="NBE-gp-aRp" id="NTN-6e-CL0"/>
+                <outlet property="photoFilterCollectionView" destination="aZY-e7-gPf" id="T8o-nr-jnv"/>
+                <outlet property="view" destination="ZQw-90-O9I" id="tBw-5j-84J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZQw-90-O9I">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-gp-aRp" customClass="FilteredImageView" customModule="TestCompress" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.1545024663" green="0.1545024663" blue="0.1545024663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </glkView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aZY-e7-gPf">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="610" id="WKn-Zv-p3N"/>
+                        <constraint firstAttribute="height" constant="100" id="gTa-NN-GZA"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="2" id="ggB-Ge-pTz">
+                        <size key="itemSize" width="66" height="86"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells>
+                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoFilterCell" id="gZW-TW-c5K" customClass="PhotoFilterCollectionViewCell" customModule="TestCompress" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="7" width="66" height="86"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                <rect key="frame" x="0.0" y="0.0" width="66" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </view>
+                        </collectionViewCell>
+                    </cells>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mc6-se-vrp"/>
+                        <outlet property="delegate" destination="-1" id="9g0-Dy-oKs"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="NBE-gp-aRp" secondAttribute="centerX" id="2e5-Nd-9zD"/>
+                <constraint firstAttribute="centerX" secondItem="aZY-e7-gPf" secondAttribute="centerX" id="6yn-M1-EGr"/>
+                <constraint firstAttribute="width" secondItem="NBE-gp-aRp" secondAttribute="width" id="CA0-a0-dWr"/>
+                <constraint firstItem="aZY-e7-gPf" firstAttribute="top" secondItem="NBE-gp-aRp" secondAttribute="bottom" id="EoO-8x-uYc"/>
+                <constraint firstAttribute="bottom" secondItem="aZY-e7-gPf" secondAttribute="bottom" constant="67" id="PCs-fh-pvD"/>
+                <constraint firstItem="NBE-gp-aRp" firstAttribute="top" secondItem="ZQw-90-O9I" secondAttribute="top" constant="20" id="RhK-2C-Tfj"/>
+                <constraint firstAttribute="width" secondItem="aZY-e7-gPf" secondAttribute="width" priority="500" id="ZjV-Zz-EGV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

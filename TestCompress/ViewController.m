@@ -12,8 +12,8 @@
 
 #import "VideoDetailViewController.h"
 #import "VideoPickerViewController.h"
-
 #import "EditVideoViewController.h"
+#import "TestCompress-Swift.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
    
@@ -99,7 +99,7 @@
     }
 }
 
-
+#pragma mark- Action
 - (IBAction)selecteVideoButtonClicked:(id)sender
 {
     VideoPickerViewController *videoPickerVC = [VideoPickerViewController new];
@@ -112,6 +112,10 @@
     [self.navigationController pushViewController:addWaterVC animated:YES];
 }
 
+- (IBAction)filterButtonClicked:(id)sender {
+    FiltersEnterViewController *filterList = [FiltersEnterViewController new];
+    [self.navigationController pushViewController:filterList animated:YES];
+}
 
 
 #pragma mark- private methods
