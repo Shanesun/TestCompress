@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		349F463D1D9232D500065DDF /* TestALAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */; };
 		349F46FB1D92A3DD00065DDF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 349F46FA1D92A3DD00065DDF /* test.png */; };
+		34A4C8701DAB267A00714428 /* DIYImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A4C86E1DAB267A00714428 /* DIYImageViewController.m */; };
+		34A4C8711DAB267A00714428 /* DIYImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C86F1DAB267A00714428 /* DIYImageViewController.xib */; };
+		34A4C8731DAB2BFA00714428 /* empty_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8721DAB2BFA00714428 /* empty_img@2x.png */; };
+		34A4C8761DAB2C6E00714428 /* qun_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8741DAB2C6E00714428 /* qun_delete.png */; };
+		34A4C8771DAB2C6E00714428 /* qun_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8751DAB2C6E00714428 /* qun_add.png */; };
+		34A4C87A1DAB2D4700714428 /* 麦克雷帽.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8781DAB2D4700714428 /* 麦克雷帽.png */; };
+		34A4C87B1DAB2D4700714428 /* 麦克雷烟.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8791DAB2D4700714428 /* 麦克雷烟.png */; };
+		34A4C87F1DAB2FEB00714428 /* 图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C87E1DAB2FEB00714428 /* 图片.png */; };
+		34A4C8811DAB422C00714428 /* diy_scale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8801DAB422C00714428 /* diy_scale@2x.png */; };
 		34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */; };
 		34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ABBFEB1D991ECF00B3CCA6 /* VideoPickerViewController.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
@@ -71,6 +80,16 @@
 		349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestALAssetsLibraryTests.m; sourceTree = "<group>"; };
 		349F463E1D9232D500065DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349F46FA1D92A3DD00065DDF /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../test.png; sourceTree = "<group>"; };
+		34A4C86D1DAB267A00714428 /* DIYImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYImageViewController.h; sourceTree = "<group>"; };
+		34A4C86E1DAB267A00714428 /* DIYImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYImageViewController.m; sourceTree = "<group>"; };
+		34A4C86F1DAB267A00714428 /* DIYImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYImageViewController.xib; sourceTree = "<group>"; };
+		34A4C8721DAB2BFA00714428 /* empty_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty_img@2x.png"; sourceTree = "<group>"; };
+		34A4C8741DAB2C6E00714428 /* qun_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qun_delete.png; sourceTree = "<group>"; };
+		34A4C8751DAB2C6E00714428 /* qun_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qun_add.png; sourceTree = "<group>"; };
+		34A4C8781DAB2D4700714428 /* 麦克雷帽.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦克雷帽.png"; sourceTree = "<group>"; };
+		34A4C8791DAB2D4700714428 /* 麦克雷烟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦克雷烟.png"; sourceTree = "<group>"; };
+		34A4C87E1DAB2FEB00714428 /* 图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片.png"; sourceTree = "<group>"; };
+		34A4C8801DAB422C00714428 /* diy_scale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diy_scale@2x.png"; sourceTree = "<group>"; };
 		34ABBFE71D991ECF00B3CCA6 /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
 		34ABBFE81D991ECF00B3CCA6 /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
 		34ABBFE91D991ECF00B3CCA6 /* VideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDetailViewController.xib; sourceTree = "<group>"; };
@@ -183,6 +202,23 @@
 			path = Compress;
 			sourceTree = "<group>";
 		};
+		34B5DABF1DAA4BD900F7BBEC /* DIYImage */ = {
+			isa = PBXGroup;
+			children = (
+				34A4C8801DAB422C00714428 /* diy_scale@2x.png */,
+				34A4C87E1DAB2FEB00714428 /* 图片.png */,
+				34A4C8781DAB2D4700714428 /* 麦克雷帽.png */,
+				34A4C8791DAB2D4700714428 /* 麦克雷烟.png */,
+				34A4C8721DAB2BFA00714428 /* empty_img@2x.png */,
+				34A4C8741DAB2C6E00714428 /* qun_delete.png */,
+				34A4C8751DAB2C6E00714428 /* qun_add.png */,
+				34A4C86D1DAB267A00714428 /* DIYImageViewController.h */,
+				34A4C86E1DAB267A00714428 /* DIYImageViewController.m */,
+				34A4C86F1DAB267A00714428 /* DIYImageViewController.xib */,
+			);
+			path = DIYImage;
+			sourceTree = "<group>";
+		};
 		34BD620C1DA88D54004BF6AA /* EditVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +289,7 @@
 				34BD620C1DA88D54004BF6AA /* EditVideo */,
 				34ABBFE61D991ECF00B3CCA6 /* Compress */,
 				34F8F25C1DA8DDB00046F5C3 /* Filter */,
+				34B5DABF1DAA4BD900F7BBEC /* DIYImage */,
 				34E7AEDC1D911BF4007DA169 /* AppDelegate.h */,
 				34E7AEDD1D911BF4007DA169 /* AppDelegate.m */,
 				34E7AEDF1D911BF4007DA169 /* ViewController.h */,
@@ -481,13 +518,21 @@
 				34BD62131DA88D54004BF6AA /* EditVideoViewController.xib in Resources */,
 				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
 				34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */,
+				34A4C87A1DAB2D4700714428 /* 麦克雷帽.png in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
 				34F8F2811DA9DAF60046F5C3 /* PhotoFilterViewController.xib in Resources */,
 				34BD62151DA88D54004BF6AA /* watermark@2x.png in Resources */,
+				34A4C8771DAB2C6E00714428 /* qun_add.png in Resources */,
+				34A4C8761DAB2C6E00714428 /* qun_delete.png in Resources */,
+				34A4C87F1DAB2FEB00714428 /* 图片.png in Resources */,
+				34A4C8811DAB422C00714428 /* diy_scale@2x.png in Resources */,
 				34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */,
 				349F46FB1D92A3DD00065DDF /* test.png in Resources */,
+				34A4C8711DAB267A00714428 /* DIYImageViewController.xib in Resources */,
 				34F8F27F1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib in Resources */,
+				34A4C87B1DAB2D4700714428 /* 麦克雷烟.png in Resources */,
 				34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */,
+				34A4C8731DAB2BFA00714428 /* empty_img@2x.png in Resources */,
 				34F8F26E1DA8F4FB0046F5C3 /* duckling.jpg in Resources */,
 				34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */,
 			);
@@ -533,6 +578,7 @@
 				34DB35301D9A5BDF00F5E6A1 /* SVIndefiniteAnimatedView.m in Sources */,
 				34F8F27A1DA8F6C90046F5C3 /* FiltersEnterViewController.swift in Sources */,
 				34E7AEDE1D911BF4007DA169 /* AppDelegate.m in Sources */,
+				34A4C8701DAB267A00714428 /* DIYImageViewController.m in Sources */,
 				34DB35251D9A50DC00F5E6A1 /* ZYBVideoManager.m in Sources */,
 				34F8F25F1DA8DFF30046F5C3 /* FilterListViewController.swift in Sources */,
 				34F8F2691DA8E03D0046F5C3 /* FilteredImageView.swift in Sources */,

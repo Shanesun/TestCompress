@@ -14,6 +14,7 @@
 #import "VideoPickerViewController.h"
 #import "EditVideoViewController.h"
 #import "TestCompress-Swift.h"
+#import "DIYImageViewController.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
    
@@ -117,6 +118,10 @@
     [self.navigationController pushViewController:filterList animated:YES];
 }
 
+- (IBAction)diyImageClicked:(id)sender {
+    DIYImageViewController *vc = [DIYImageViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 #pragma mark- private methods
 - (void)showImagePickerVC

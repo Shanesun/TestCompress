@@ -72,15 +72,32 @@
                                     <action selector="filterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0Y-IT-dM6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-4E-588">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="6Q8-2x-dsW"/>
+                                    <constraint firstAttribute="height" constant="45" id="UuD-da-RBB"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="zMH-dU-HXg"/>
+                                </constraints>
+                                <state key="normal" title="DIY图片">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="diyImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBV-oi-9uo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="top" secondItem="gkb-b7-OMK" secondAttribute="bottom" constant="19" id="8m4-Um-Mkz"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q31-gg-11P"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="Qid-4z-Axy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gkb-b7-OMK" secondAttribute="trailing" id="UKF-Gu-VTE"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V7x-vr-pLG"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xzl-rQ-JPe"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="top" secondItem="aX4-VU-eD1" secondAttribute="bottom" constant="19" id="ZQ5-uW-ToT"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="abF-n2-rGA"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="doG-Zh-YUe"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="top" secondItem="zGz-OH-I5z" secondAttribute="bottom" constant="19" id="nMt-wP-azL"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYy-PA-sd5"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ulQ-ma-OlG"/>
