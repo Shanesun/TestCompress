@@ -7,8 +7,11 @@
 //
 
 #import "DIYImageViewController.h"
+#import "ZYBImageHelper.h"
+#import "ZYBVideoHelper.h"
+#import "SVProgressHUD.h"
 
-@interface DIYImageViewController ()
+@interface DIYImageViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *imageBgView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundimageView;
 
@@ -16,6 +19,7 @@
 @property (strong, nonatomic) UIButton *maskImageScaleButton;
 @property (nonatomic) BOOL isSelectedMaskImage;
 
+@property (nonatomic) CGAffineTransform maskStartTransform;
 @property (nonatomic) CGPoint deltaScaleButtonAndMaskImage;
 @property (nonatomic) CGFloat maskImageScale;
 @property (nonatomic) CGPoint panBeginPoint;
@@ -51,14 +55,15 @@
     
     // 计算 旋转角度
     CGFloat angle = [self originPoint:self.maskImageView.center startPoint:self.scaleBeginPoint endPoint:centerPoint];
-    self.maskImageView.transform = CGAffineTransformMakeRotation(angle);
+    NSLog(@" originPoint:%@, startPoint:%@, endPoint:%@, angle:%f",NSStringFromCGPoint(self.maskImageView.center),NSStringFromCGPoint(self.scaleBeginPoint),NSStringFromCGPoint(centerPoint), angle);
+
+    self.maskImageView.transform = CGAffineTransformRotate(self.maskStartTransform, angle);
     
     self.maskImageScaleButton.center = centerPoint;
 }
 
 - (CGFloat)originPoint:(CGPoint)originPoint startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint
 {
-//     NSLog(@" originPoint:%@, startPoint:%@, endPoint:%@",NSStringFromCGPoint(originPoint),NSStringFromCGPoint(startPoint),NSStringFromCGPoint(endPoint));
     double angleStart = atan2f(startPoint.y - originPoint.y, startPoint.x - originPoint.x);
     double angleEnd = atan2f(endPoint.y - originPoint.y, endPoint.x - originPoint.x);
     double angleDelta = angleEnd - angleStart;
@@ -102,6 +107,7 @@
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         NSLog(@"--- Began -----");
         self.scaleBeginPoint = recognizer.view.center;
+        self.maskStartTransform = self.maskImageView.transform;
     }
     if (recognizer.state == UIGestureRecognizerStateChanged) {
         NSLog(@"--- Changed -----");
@@ -133,7 +139,27 @@
 
 - (IBAction)addImageButtonClicked:(id)sender
 {
+    UIImagePickerController *imagePicker = [UIImagePickerController new];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.allowsEditing = YES;
+    imagePicker.delegate = self;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (IBAction)savaImageClicked:(id)sender
+{
+    if (!self.backgroundimageView.image) return;
     
+   UIImage *composeImage = [ZYBImageHelper composeNewImage:self.backgroundimageView overlayImage:self.maskImageView];
+    
+    [ZYBImageHelper saveImageToPhotoAlbum:composeImage finishBlock:^(NSError *error) {
+        if (!error) {
+            [SVProgressHUD showInfoWithStatus:@"保存成功"];
+        }
+        else{
+            [SVProgressHUD showInfoWithStatus:@"保存失败"];
+        }
+    }];
 }
 
 - (IBAction)increaseImageSizeClicked:(id)sender
@@ -144,6 +170,12 @@
 - (IBAction)reduceImageSizeClicked:(id)sender
 {
     
+}
+#pragma mark- image picker delegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo
+{
+    self.backgroundimageView.image = image;
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark- setters and getters 

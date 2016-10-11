@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340173591DAC87490099C030 /* ZYBImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340173581DAC87490099C030 /* ZYBImageHelper.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		349F463D1D9232D500065DDF /* TestALAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */; };
 		349F46FB1D92A3DD00065DDF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 349F46FA1D92A3DD00065DDF /* test.png */; };
 		34A4C8701DAB267A00714428 /* DIYImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A4C86E1DAB267A00714428 /* DIYImageViewController.m */; };
@@ -75,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340173571DAC87490099C030 /* ZYBImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBImageHelper.h; sourceTree = "<group>"; };
+		340173581DAC87490099C030 /* ZYBImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBImageHelper.m; sourceTree = "<group>"; };
 		349F46201D9232D400065DDF /* TestALAssetsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestALAssetsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F46381D9232D500065DDF /* TestALAssetsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestALAssetsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestALAssetsLibraryTests.m; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				34DB35211D9A508600F5E6A1 /* ZYBVideoHelper.m */,
 				34DB35231D9A50DC00F5E6A1 /* ZYBVideoManager.h */,
 				34DB35241D9A50DC00F5E6A1 /* ZYBVideoManager.m */,
+				340173571DAC87490099C030 /* ZYBImageHelper.h */,
+				340173581DAC87490099C030 /* ZYBImageHelper.m */,
 			);
 			path = ZYBVideoHelper;
 			sourceTree = "<group>";
@@ -570,6 +575,7 @@
 				34BD62121DA88D54004BF6AA /* EditVideoViewController.m in Sources */,
 				34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */,
 				34DB35311D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m in Sources */,
+				340173591DAC87490099C030 /* ZYBImageHelper.m in Sources */,
 				34F8F2681DA8E03D0046F5C3 /* ScalarFilterParameter.swift in Sources */,
 				34F8F2651DA8E02C0046F5C3 /* ParameterAdjustmentView.swift in Sources */,
 				34F8F2721DA8F5B90046F5C3 /* PhotoFilterCollectionViewCell.swift in Sources */,

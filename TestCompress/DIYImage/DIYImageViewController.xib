@@ -21,15 +21,14 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fab-cr-raw">
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAH-Te-Jlz"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAH-Te-Jlz"/>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="kAH-Te-Jlz" secondAttribute="trailing" id="EWH-1S-Vxr"/>
-                        <constraint firstAttribute="width" constant="375" id="SvD-eo-zDv"/>
+                        <constraint firstAttribute="width" secondItem="fab-cr-raw" secondAttribute="height" multiplier="1:1" id="Rw9-UP-UfW"/>
                         <constraint firstAttribute="bottom" secondItem="kAH-Te-Jlz" secondAttribute="bottom" id="a3b-nr-iFd"/>
                         <constraint firstItem="kAH-Te-Jlz" firstAttribute="top" secondItem="fab-cr-raw" secondAttribute="top" id="bAU-Td-yfV"/>
-                        <constraint firstAttribute="height" constant="202" id="j0J-k4-0xQ"/>
                         <constraint firstItem="kAH-Te-Jlz" firstAttribute="leading" secondItem="fab-cr-raw" secondAttribute="leading" id="piV-lL-xmi"/>
                     </constraints>
                 </view>
@@ -38,12 +37,14 @@
                         <constraint firstAttribute="width" constant="48" id="Nkn-ZL-rWj"/>
                         <constraint firstAttribute="height" constant="48" id="XgR-Xk-hWC"/>
                     </constraints>
-                    <state key="normal" image="qun_add.png"/>
+                    <state key="normal" title="保存" backgroundImage="qun_add.png">
+                        <color key="titleColor" red="0.2470588235" green="0.1529411765" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
-                        <action selector="increaseImageSizeClicked:" destination="-1" eventType="touchUpInside" id="2v0-Rh-haZ"/>
+                        <action selector="savaImageClicked:" destination="-1" eventType="touchUpInside" id="FG6-HK-qUi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaP-Uu-TKL">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaP-Uu-TKL">
                     <constraints>
                         <constraint firstAttribute="width" constant="48" id="K0a-fn-7F2"/>
                         <constraint firstAttribute="height" constant="48" id="oi7-gL-5s8"/>
