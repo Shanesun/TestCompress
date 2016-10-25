@@ -15,7 +15,7 @@
 {
     UIImage *newImage = nil;
     
-    CGSize size = orignImage.bounds.size;
+    CGSize size = orignImage.image.size;
     UIGraphicsBeginImageContext(size);
     
     [orignImage.image drawInRect:CGRectMake(0, 0, size.width, size.height)];

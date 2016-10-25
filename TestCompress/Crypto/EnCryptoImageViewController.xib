@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnCryptoImageViewController">
+            <connections>
+                <outlet property="cryptoImageDataTxf" destination="TU3-yf-KI6" id="rlD-3R-VYE"/>
+                <outlet property="encryproImageView" destination="AzO-eO-64C" id="Sst-R6-IHN"/>
+                <outlet property="encryproTxf" destination="u7G-wo-Ach" id="x1e-H5-RWg"/>
+                <outlet property="encryptoButton" destination="Qxz-OX-cgU" id="cIE-cG-vCU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TU3-yf-KI6">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="RoK-Wo-oWr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxz-OX-cgU">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="awE-1U-C5X"/>
+                    </constraints>
+                    <state key="normal" title="解密">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="encryptoButtonClicked:" destination="-1" eventType="touchUpInside" id="TSV-UJ-YUA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AzO-eO-64C">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="1ej-uV-OTh"/>
+                        <constraint firstAttribute="height" constant="200" id="BPD-Sc-88y"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u7G-wo-Ach">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qxz-OX-cgU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0ge-Ec-hvT"/>
+                <constraint firstAttribute="trailing" secondItem="u7G-wo-Ach" secondAttribute="trailing" constant="8" id="A5C-u8-rw1"/>
+                <constraint firstItem="Qxz-OX-cgU" firstAttribute="top" secondItem="TU3-yf-KI6" secondAttribute="bottom" constant="8" id="OCn-5r-Ia7"/>
+                <constraint firstItem="u7G-wo-Ach" firstAttribute="height" secondItem="AzO-eO-64C" secondAttribute="height" id="OxA-Dd-0W3"/>
+                <constraint firstAttribute="trailing" secondItem="Qxz-OX-cgU" secondAttribute="trailing" id="RsH-AJ-0iV"/>
+                <constraint firstItem="TU3-yf-KI6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="U3H-Sy-Mwt"/>
+                <constraint firstAttribute="trailing" secondItem="TU3-yf-KI6" secondAttribute="trailing" id="ZEf-La-MbP"/>
+                <constraint firstItem="u7G-wo-Ach" firstAttribute="leading" secondItem="AzO-eO-64C" secondAttribute="trailing" constant="8" id="b8y-Om-bud"/>
+                <constraint firstItem="TU3-yf-KI6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fbE-lj-Whs"/>
+                <constraint firstItem="AzO-eO-64C" firstAttribute="top" secondItem="TU3-yf-KI6" secondAttribute="bottom" constant="60" id="gM2-Ps-5RB"/>
+                <constraint firstItem="AzO-eO-64C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mKr-u8-5On"/>
+                <constraint firstItem="u7G-wo-Ach" firstAttribute="top" secondItem="AzO-eO-64C" secondAttribute="top" id="ywT-pc-QUm"/>
+            </constraints>
+            <point key="canvasLocation" x="-324" y="-25"/>
+        </view>
+    </objects>
+</document>

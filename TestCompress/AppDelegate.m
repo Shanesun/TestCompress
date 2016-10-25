@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TmpClass.h"
 
 @interface AppDelegate ()
 
@@ -14,11 +15,51 @@
 
 @implementation AppDelegate
 
+extern void _objc_autoreleasePoolPrint();
+extern int _objc_rootRetainCount();
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
+     //    TmpClass *tmp = nil;
+//    [self tmepdd:tmp];
+//    
+//    NSError *error = nil;
+//    [self dealError:&error];
+    
+//
+//    NSString *tmpString = @"firstString";
+//    [self changeString:tmpString];
+    
+//    id  __strong obj = [[NSObject alloc]init];
+//    _objc_autoreleasePoolPrint();
+//    id __weak o = obj;
+//    NSLog(@"count: %d",_objc_rootRetainCount(obj));
+//    NSLog(@"class=%@",[o class]);
+//    NSLog(@"count: %d",_objc_rootRetainCount(obj));
+//    _objc_autoreleasePoolPrint();
+    
     return YES;
 }
+
+//- (void)tmepdd:(TmpClass *)tmp
+//{
+//    tmp = [TmpClass new];
+//    tmp.name = @"jason";
+//    tmp.id = 7;
+//}
+//
+- (void)dealError:(NSError **)error
+{
+    NSError *tmp = [NSError errorWithDomain:@"tttt" code:-1 userInfo:nil];
+    *error = tmp;
+//    _objc_autoreleasePoolPrint();
+}
+//
+//- (void)changeString:(NSString *)tmpString
+//{
+//    tmpString = @"changedString";
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

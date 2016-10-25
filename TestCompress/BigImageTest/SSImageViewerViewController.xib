@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSImageViewerViewController">
+            <connections>
+                <outlet property="imageViewBottomNC" destination="gbN-i6-QoT" id="eBo-QM-OmG"/>
+                <outlet property="imageViewLeadingNC" destination="4FX-7G-n4o" id="0sa-wf-1f5"/>
+                <outlet property="imageViewTopNC" destination="hSE-t1-Lud" id="7SX-YO-RZo"/>
+                <outlet property="imageViewTrailingNC" destination="LgQ-ZS-y01" id="4af-vY-3sJ"/>
+                <outlet property="photoImageView" destination="wcn-bL-EVh" id="WcO-S4-vmq"/>
+                <outlet property="scrollView" destination="teO-S2-rjD" id="Bda-IE-iwT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teO-S2-rjD">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="wcn-bL-EVh">
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wcn-bL-EVh" firstAttribute="leading" secondItem="teO-S2-rjD" secondAttribute="leading" id="4FX-7G-n4o"/>
+                        <constraint firstAttribute="trailing" secondItem="wcn-bL-EVh" secondAttribute="trailing" id="LgQ-ZS-y01"/>
+                        <constraint firstAttribute="bottom" secondItem="wcn-bL-EVh" secondAttribute="bottom" id="gbN-i6-QoT"/>
+                        <constraint firstItem="wcn-bL-EVh" firstAttribute="top" secondItem="teO-S2-rjD" secondAttribute="top" id="hSE-t1-Lud"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1tZ-Sa-NEi"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="teO-S2-rjD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EFR-7t-DcG"/>
+                <constraint firstAttribute="bottom" secondItem="teO-S2-rjD" secondAttribute="bottom" id="Fc7-up-ckG"/>
+                <constraint firstAttribute="trailing" secondItem="teO-S2-rjD" secondAttribute="trailing" id="Rju-RE-fXS"/>
+                <constraint firstItem="teO-S2-rjD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pOu-lx-che"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -15,6 +15,8 @@
 #import "EditVideoViewController.h"
 #import "TestCompress-Swift.h"
 #import "DIYImageViewController.h"
+#import "CryptoViewController.h"
+#import "BigImageListViewController.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>{
    
@@ -120,6 +122,17 @@
 
 - (IBAction)diyImageClicked:(id)sender {
     DIYImageViewController *vc = [DIYImageViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)imageDES:(id)sender {
+    CryptoViewController *vc = [CryptoViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (IBAction)bigImageViewClicked:(id)sender {
+    BigImageListViewController *vc = [BigImageListViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

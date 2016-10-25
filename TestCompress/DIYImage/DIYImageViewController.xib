@@ -74,6 +74,16 @@
                         <action selector="addMaskImageClicked:" destination="-1" eventType="touchUpInside" id="yPx-FQ-vDu"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-fP-nPh">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Bbw-RM-nOd"/>
+                        <constraint firstAttribute="width" secondItem="Akc-fP-nPh" secondAttribute="height" multiplier="253:331" id="Uk9-H3-iax"/>
+                    </constraints>
+                    <state key="normal" image="秩序之光.png"/>
+                    <connections>
+                        <action selector="faceDetectButtonClicked:" destination="-1" eventType="touchUpInside" id="3Lj-4M-Ads"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -84,7 +94,9 @@
                 <constraint firstItem="12g-er-a1g" firstAttribute="top" secondItem="bYt-M6-93H" secondAttribute="top" id="Szj-qW-39H"/>
                 <constraint firstItem="fab-cr-raw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T7M-m0-weE"/>
                 <constraint firstItem="jaP-Uu-TKL" firstAttribute="top" secondItem="bYt-M6-93H" secondAttribute="top" id="boS-Gx-drB"/>
+                <constraint firstItem="Akc-fP-nPh" firstAttribute="top" secondItem="qGZ-ab-bOy" secondAttribute="top" id="bwe-Oo-lYH"/>
                 <constraint firstItem="fab-cr-raw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hqd-Lw-iee"/>
+                <constraint firstAttribute="trailing" secondItem="Akc-fP-nPh" secondAttribute="trailing" constant="30" id="mm1-Wn-tgB"/>
                 <constraint firstItem="qGZ-ab-bOy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="rWF-bJ-3JB"/>
                 <constraint firstItem="qGZ-ab-bOy" firstAttribute="top" secondItem="fab-cr-raw" secondAttribute="bottom" constant="8" id="rhP-zT-Emt"/>
                 <constraint firstAttribute="trailing" secondItem="jaP-Uu-TKL" secondAttribute="trailing" constant="16" id="x5z-Dt-dVd"/>
@@ -97,6 +109,7 @@
         <image name="qun_add.png" width="96" height="96"/>
         <image name="qun_delete.png" width="96" height="96"/>
         <image name="图片.png" width="56" height="56"/>
+        <image name="秩序之光.png" width="506" height="662"/>
         <image name="麦克雷帽.png" width="583" height="221"/>
     </resources>
 </document>

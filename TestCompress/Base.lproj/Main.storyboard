@@ -11,6 +11,7 @@
         <scene sceneID="EeV-Cl-8KV">
             <objects>
                 <navigationController id="AvY-f5-bPB" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfJ-9z-GSn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -63,7 +64,6 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="O6l-qT-9VL"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="uMM-xv-Dcy"/>
                                 </constraints>
                                 <state key="normal" title="滤镜">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,9 +75,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-4E-588">
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="6Q8-2x-dsW"/>
                                     <constraint firstAttribute="height" constant="45" id="UuD-da-RBB"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="zMH-dU-HXg"/>
                                 </constraints>
                                 <state key="normal" title="DIY图片">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,24 +84,54 @@
                                     <action selector="diyImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBV-oi-9uo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-EZ-Fiv">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HvS-9L-h84"/>
+                                </constraints>
+                                <state key="normal" title="图片加密解密">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageDES:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgI-zY-I3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBU-3C-GB7">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9bG-lL-WMc"/>
+                                </constraints>
+                                <state key="normal" title="图片预览">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bigImageViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="so8-ix-iZP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RBU-3C-GB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="7CI-Qk-PoP"/>
+                            <constraint firstItem="RBU-3C-GB7" firstAttribute="top" secondItem="aEn-EZ-Fiv" secondAttribute="bottom" constant="17" id="8VA-Hz-RaH"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="top" secondItem="gkb-b7-OMK" secondAttribute="bottom" constant="19" id="8m4-Um-Mkz"/>
+                            <constraint firstAttribute="trailing" secondItem="aEn-EZ-Fiv" secondAttribute="trailing" constant="16" id="8vH-vZ-aOQ"/>
                             <constraint firstItem="kq0-4E-588" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q31-gg-11P"/>
+                            <constraint firstAttribute="trailing" secondItem="RBU-3C-GB7" secondAttribute="trailing" constant="16" id="QWw-Z3-Ya5"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="Qid-4z-Axy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gkb-b7-OMK" secondAttribute="trailing" id="UKF-Gu-VTE"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V7x-vr-pLG"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xzl-rQ-JPe"/>
                             <constraint firstItem="kq0-4E-588" firstAttribute="top" secondItem="aX4-VU-eD1" secondAttribute="bottom" constant="19" id="ZQ5-uW-ToT"/>
+                            <constraint firstItem="aEn-EZ-Fiv" firstAttribute="top" secondItem="kq0-4E-588" secondAttribute="bottom" constant="19" id="Zfy-AV-0zP"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="abF-n2-rGA"/>
+                            <constraint firstItem="aEn-EZ-Fiv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="bYX-u9-zE2"/>
                             <constraint firstItem="kq0-4E-588" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="doG-Zh-YUe"/>
                             <constraint firstItem="aX4-VU-eD1" firstAttribute="top" secondItem="zGz-OH-I5z" secondAttribute="bottom" constant="19" id="nMt-wP-azL"/>
                             <constraint firstItem="gkb-b7-OMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYy-PA-sd5"/>
                             <constraint firstItem="zGz-OH-I5z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ulQ-ma-OlG"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="视频处理" id="gqN-kC-e5F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

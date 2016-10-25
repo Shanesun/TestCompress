@@ -15,7 +15,6 @@
 		34A4C8731DAB2BFA00714428 /* empty_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8721DAB2BFA00714428 /* empty_img@2x.png */; };
 		34A4C8761DAB2C6E00714428 /* qun_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8741DAB2C6E00714428 /* qun_delete.png */; };
 		34A4C8771DAB2C6E00714428 /* qun_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8751DAB2C6E00714428 /* qun_add.png */; };
-		34A4C87A1DAB2D4700714428 /* 麦克雷帽.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8781DAB2D4700714428 /* 麦克雷帽.png */; };
 		34A4C87B1DAB2D4700714428 /* 麦克雷烟.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8791DAB2D4700714428 /* 麦克雷烟.png */; };
 		34A4C87F1DAB2FEB00714428 /* 图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C87E1DAB2FEB00714428 /* 图片.png */; };
 		34A4C8811DAB422C00714428 /* diy_scale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A4C8801DAB422C00714428 /* diy_scale@2x.png */; };
@@ -43,6 +42,27 @@
 		34E7AEF41D911BF4007DA169 /* TestCompressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7AEF31D911BF4007DA169 /* TestCompressTests.m */; };
 		34E7AEFF1D911EA9007DA169 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */; };
 		34E7AF011D913504007DA169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E7AF001D913504007DA169 /* AVFoundation.framework */; };
+		34EB7C021DB46CC8005FCB7B /* 秩序之光.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C011DB46CC8005FCB7B /* 秩序之光.png */; };
+		34EB7C0A1DB5BF1A005FCB7B /* TmpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C091DB5BF1A005FCB7B /* TmpClass.m */; };
+		34EB7C321DB74BF9005FCB7B /* CryptoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C301DB74BF9005FCB7B /* CryptoViewController.m */; };
+		34EB7C331DB74BF9005FCB7B /* CryptoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C311DB74BF9005FCB7B /* CryptoViewController.xib */; };
+		34EB7C361DB754DE005FCB7B /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C351DB754DE005FCB7B /* NSData+Encryption.m */; };
+		34EB7C391DB75AEC005FCB7B /* lena512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C371DB75AEC005FCB7B /* lena512.jpg */; };
+		34EB7C3A1DB75AEC005FCB7B /* dribbble512.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C381DB75AEC005FCB7B /* dribbble512.png */; };
+		34EB7C3E1DB75D5F005FCB7B /* EnCryptoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C3C1DB75D5F005FCB7B /* EnCryptoImageViewController.m */; };
+		34EB7C3F1DB75D5F005FCB7B /* EnCryptoImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C3D1DB75D5F005FCB7B /* EnCryptoImageViewController.xib */; };
+		34EB7C441DB770A5005FCB7B /* BigImageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C421DB770A5005FCB7B /* BigImageListViewController.m */; };
+		34EB7C451DB770A5005FCB7B /* BigImageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C431DB770A5005FCB7B /* BigImageListViewController.xib */; };
+		34EB7C4D1DB77BF8005FCB7B /* 12.5mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C461DB77BF8005FCB7B /* 12.5mb.jpg */; };
+		34EB7C4E1DB77BF8005FCB7B /* 14.9mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C471DB77BF8005FCB7B /* 14.9mb.jpg */; };
+		34EB7C4F1DB77BF8005FCB7B /* 7.3mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C481DB77BF8005FCB7B /* 7.3mb.jpg */; };
+		34EB7C501DB77BF8005FCB7B /* 9.5mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C491DB77BF8005FCB7B /* 9.5mb.jpg */; };
+		34EB7C511DB77BF8005FCB7B /* dog2.4mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C4A1DB77BF8005FCB7B /* dog2.4mb.jpg */; };
+		34EB7C521DB77BF8005FCB7B /* view1.9mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C4B1DB77BF8005FCB7B /* view1.9mb.jpg */; };
+		34EB7C531DB77BF8005FCB7B /* view5mb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C4C1DB77BF8005FCB7B /* view5mb.jpg */; };
+		34EB7C571DB89738005FCB7B /* SSImageViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB7C551DB89738005FCB7B /* SSImageViewerViewController.m */; };
+		34EB7C581DB89738005FCB7B /* SSImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C561DB89738005FCB7B /* SSImageViewerViewController.xib */; };
+		34EB7C5A1DBA03F4005FCB7B /* 麦克雷帽.png in Resources */ = {isa = PBXBuildFile; fileRef = 34EB7C591DBA03F4005FCB7B /* 麦克雷帽.png */; };
 		34F8F25F1DA8DFF30046F5C3 /* FilterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F25E1DA8DFF30046F5C3 /* FilterListViewController.swift */; };
 		34F8F2611DA8E0070046F5C3 /* FilterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2601DA8E0070046F5C3 /* FilterDetailViewController.swift */; };
 		34F8F2641DA8E02C0046F5C3 /* LabeledSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F2621DA8E02C0046F5C3 /* LabeledSliderView.swift */; };
@@ -89,7 +109,6 @@
 		34A4C8721DAB2BFA00714428 /* empty_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty_img@2x.png"; sourceTree = "<group>"; };
 		34A4C8741DAB2C6E00714428 /* qun_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qun_delete.png; sourceTree = "<group>"; };
 		34A4C8751DAB2C6E00714428 /* qun_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qun_add.png; sourceTree = "<group>"; };
-		34A4C8781DAB2D4700714428 /* 麦克雷帽.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦克雷帽.png"; sourceTree = "<group>"; };
 		34A4C8791DAB2D4700714428 /* 麦克雷烟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦克雷烟.png"; sourceTree = "<group>"; };
 		34A4C87E1DAB2FEB00714428 /* 图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片.png"; sourceTree = "<group>"; };
 		34A4C8801DAB422C00714428 /* diy_scale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diy_scale@2x.png"; sourceTree = "<group>"; };
@@ -132,6 +151,33 @@
 		34E7AEF51D911BF4007DA169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E7AEFE1D911EA9007DA169 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		34E7AF001D913504007DA169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		34EB7C011DB46CC8005FCB7B /* 秩序之光.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "秩序之光.png"; sourceTree = "<group>"; };
+		34EB7C081DB5BF1A005FCB7B /* TmpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmpClass.h; sourceTree = "<group>"; };
+		34EB7C091DB5BF1A005FCB7B /* TmpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TmpClass.m; sourceTree = "<group>"; };
+		34EB7C2F1DB74BF9005FCB7B /* CryptoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoViewController.h; sourceTree = "<group>"; };
+		34EB7C301DB74BF9005FCB7B /* CryptoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoViewController.m; sourceTree = "<group>"; };
+		34EB7C311DB74BF9005FCB7B /* CryptoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoViewController.xib; sourceTree = "<group>"; };
+		34EB7C341DB754DE005FCB7B /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		34EB7C351DB754DE005FCB7B /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		34EB7C371DB75AEC005FCB7B /* lena512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena512.jpg; sourceTree = "<group>"; };
+		34EB7C381DB75AEC005FCB7B /* dribbble512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble512.png; sourceTree = "<group>"; };
+		34EB7C3B1DB75D5F005FCB7B /* EnCryptoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnCryptoImageViewController.h; sourceTree = "<group>"; };
+		34EB7C3C1DB75D5F005FCB7B /* EnCryptoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnCryptoImageViewController.m; sourceTree = "<group>"; };
+		34EB7C3D1DB75D5F005FCB7B /* EnCryptoImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnCryptoImageViewController.xib; sourceTree = "<group>"; };
+		34EB7C411DB770A5005FCB7B /* BigImageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageListViewController.h; sourceTree = "<group>"; };
+		34EB7C421DB770A5005FCB7B /* BigImageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageListViewController.m; sourceTree = "<group>"; };
+		34EB7C431DB770A5005FCB7B /* BigImageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigImageListViewController.xib; sourceTree = "<group>"; };
+		34EB7C461DB77BF8005FCB7B /* 12.5mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.5mb.jpg; sourceTree = "<group>"; };
+		34EB7C471DB77BF8005FCB7B /* 14.9mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.9mb.jpg; sourceTree = "<group>"; };
+		34EB7C481DB77BF8005FCB7B /* 7.3mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.3mb.jpg; sourceTree = "<group>"; };
+		34EB7C491DB77BF8005FCB7B /* 9.5mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.5mb.jpg; sourceTree = "<group>"; };
+		34EB7C4A1DB77BF8005FCB7B /* dog2.4mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog2.4mb.jpg; sourceTree = "<group>"; };
+		34EB7C4B1DB77BF8005FCB7B /* view1.9mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view1.9mb.jpg; sourceTree = "<group>"; };
+		34EB7C4C1DB77BF8005FCB7B /* view5mb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view5mb.jpg; sourceTree = "<group>"; };
+		34EB7C541DB89738005FCB7B /* SSImageViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSImageViewerViewController.h; sourceTree = "<group>"; };
+		34EB7C551DB89738005FCB7B /* SSImageViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSImageViewerViewController.m; sourceTree = "<group>"; };
+		34EB7C561DB89738005FCB7B /* SSImageViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSImageViewerViewController.xib; sourceTree = "<group>"; };
+		34EB7C591DBA03F4005FCB7B /* 麦克雷帽.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦克雷帽.png"; sourceTree = "<group>"; };
 		34F8F25D1DA8DFF20046F5C3 /* TestCompress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCompress-Bridging-Header.h"; sourceTree = "<group>"; };
 		34F8F25E1DA8DFF30046F5C3 /* FilterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListViewController.swift; sourceTree = "<group>"; };
 		34F8F2601DA8E0070046F5C3 /* FilterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDetailViewController.swift; sourceTree = "<group>"; };
@@ -208,9 +254,10 @@
 		34B5DABF1DAA4BD900F7BBEC /* DIYImage */ = {
 			isa = PBXGroup;
 			children = (
+				34EB7C591DBA03F4005FCB7B /* 麦克雷帽.png */,
+				34EB7C011DB46CC8005FCB7B /* 秩序之光.png */,
 				34A4C8801DAB422C00714428 /* diy_scale@2x.png */,
 				34A4C87E1DAB2FEB00714428 /* 图片.png */,
-				34A4C8781DAB2D4700714428 /* 麦克雷帽.png */,
 				34A4C8791DAB2D4700714428 /* 麦克雷烟.png */,
 				34A4C8721DAB2BFA00714428 /* empty_img@2x.png */,
 				34A4C8741DAB2C6E00714428 /* qun_delete.png */,
@@ -295,6 +342,8 @@
 				34ABBFE61D991ECF00B3CCA6 /* Compress */,
 				34F8F25C1DA8DDB00046F5C3 /* Filter */,
 				34B5DABF1DAA4BD900F7BBEC /* DIYImage */,
+				34EB7C2E1DB74BE1005FCB7B /* Crypto */,
+				34EB7C401DB77090005FCB7B /* BigImageTest */,
 				34E7AEDC1D911BF4007DA169 /* AppDelegate.h */,
 				34E7AEDD1D911BF4007DA169 /* AppDelegate.m */,
 				34E7AEDF1D911BF4007DA169 /* ViewController.h */,
@@ -304,6 +353,8 @@
 				34E7AEE71D911BF4007DA169 /* LaunchScreen.storyboard */,
 				34E7AEEA1D911BF4007DA169 /* Info.plist */,
 				34E7AED91D911BF4007DA169 /* Supporting Files */,
+				34EB7C081DB5BF1A005FCB7B /* TmpClass.h */,
+				34EB7C091DB5BF1A005FCB7B /* TmpClass.m */,
 			);
 			path = TestCompress;
 			sourceTree = "<group>";
@@ -323,6 +374,43 @@
 				34E7AEF51D911BF4007DA169 /* Info.plist */,
 			);
 			path = TestCompressTests;
+			sourceTree = "<group>";
+		};
+		34EB7C2E1DB74BE1005FCB7B /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				34EB7C371DB75AEC005FCB7B /* lena512.jpg */,
+				34EB7C381DB75AEC005FCB7B /* dribbble512.png */,
+				34EB7C2F1DB74BF9005FCB7B /* CryptoViewController.h */,
+				34EB7C301DB74BF9005FCB7B /* CryptoViewController.m */,
+				34EB7C311DB74BF9005FCB7B /* CryptoViewController.xib */,
+				34EB7C3B1DB75D5F005FCB7B /* EnCryptoImageViewController.h */,
+				34EB7C3C1DB75D5F005FCB7B /* EnCryptoImageViewController.m */,
+				34EB7C3D1DB75D5F005FCB7B /* EnCryptoImageViewController.xib */,
+				34EB7C341DB754DE005FCB7B /* NSData+Encryption.h */,
+				34EB7C351DB754DE005FCB7B /* NSData+Encryption.m */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		34EB7C401DB77090005FCB7B /* BigImageTest */ = {
+			isa = PBXGroup;
+			children = (
+				34EB7C461DB77BF8005FCB7B /* 12.5mb.jpg */,
+				34EB7C471DB77BF8005FCB7B /* 14.9mb.jpg */,
+				34EB7C481DB77BF8005FCB7B /* 7.3mb.jpg */,
+				34EB7C491DB77BF8005FCB7B /* 9.5mb.jpg */,
+				34EB7C4A1DB77BF8005FCB7B /* dog2.4mb.jpg */,
+				34EB7C4B1DB77BF8005FCB7B /* view1.9mb.jpg */,
+				34EB7C4C1DB77BF8005FCB7B /* view5mb.jpg */,
+				34EB7C411DB770A5005FCB7B /* BigImageListViewController.h */,
+				34EB7C421DB770A5005FCB7B /* BigImageListViewController.m */,
+				34EB7C431DB770A5005FCB7B /* BigImageListViewController.xib */,
+				34EB7C541DB89738005FCB7B /* SSImageViewerViewController.h */,
+				34EB7C551DB89738005FCB7B /* SSImageViewerViewController.m */,
+				34EB7C561DB89738005FCB7B /* SSImageViewerViewController.xib */,
+			);
+			path = BigImageTest;
 			sourceTree = "<group>";
 		};
 		34F8F25C1DA8DDB00046F5C3 /* Filter */ = {
@@ -519,25 +607,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EB7C3F1DB75D5F005FCB7B /* EnCryptoImageViewController.xib in Resources */,
 				34BD62141DA88D54004BF6AA /* Music.m4a in Resources */,
+				34EB7C4D1DB77BF8005FCB7B /* 12.5mb.jpg in Resources */,
 				34BD62131DA88D54004BF6AA /* EditVideoViewController.xib in Resources */,
 				34ABBFF01D991ECF00B3CCA6 /* VideoPickerViewController.xib in Resources */,
 				34DB35321D9A5BDF00F5E6A1 /* SVProgressHUD.bundle in Resources */,
-				34A4C87A1DAB2D4700714428 /* 麦克雷帽.png in Resources */,
+				34EB7C331DB74BF9005FCB7B /* CryptoViewController.xib in Resources */,
+				34EB7C501DB77BF8005FCB7B /* 9.5mb.jpg in Resources */,
+				34EB7C021DB46CC8005FCB7B /* 秩序之光.png in Resources */,
+				34EB7C451DB770A5005FCB7B /* BigImageListViewController.xib in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
 				34F8F2811DA9DAF60046F5C3 /* PhotoFilterViewController.xib in Resources */,
 				34BD62151DA88D54004BF6AA /* watermark@2x.png in Resources */,
+				34EB7C5A1DBA03F4005FCB7B /* 麦克雷帽.png in Resources */,
 				34A4C8771DAB2C6E00714428 /* qun_add.png in Resources */,
+				34EB7C531DB77BF8005FCB7B /* view5mb.jpg in Resources */,
 				34A4C8761DAB2C6E00714428 /* qun_delete.png in Resources */,
 				34A4C87F1DAB2FEB00714428 /* 图片.png in Resources */,
+				34EB7C391DB75AEC005FCB7B /* lena512.jpg in Resources */,
+				34EB7C4E1DB77BF8005FCB7B /* 14.9mb.jpg in Resources */,
+				34EB7C521DB77BF8005FCB7B /* view1.9mb.jpg in Resources */,
 				34A4C8811DAB422C00714428 /* diy_scale@2x.png in Resources */,
+				34EB7C581DB89738005FCB7B /* SSImageViewerViewController.xib in Resources */,
 				34ABBFEE1D991ECF00B3CCA6 /* VideoDetailViewController.xib in Resources */,
 				349F46FB1D92A3DD00065DDF /* test.png in Resources */,
 				34A4C8711DAB267A00714428 /* DIYImageViewController.xib in Resources */,
 				34F8F27F1DA8FA9D0046F5C3 /* FilterDesWebViewController.xib in Resources */,
+				34EB7C511DB77BF8005FCB7B /* dog2.4mb.jpg in Resources */,
 				34A4C87B1DAB2D4700714428 /* 麦克雷烟.png in Resources */,
 				34E7AEE61D911BF4007DA169 /* Assets.xcassets in Resources */,
 				34A4C8731DAB2BFA00714428 /* empty_img@2x.png in Resources */,
+				34EB7C3A1DB75AEC005FCB7B /* dribbble512.png in Resources */,
+				34EB7C4F1DB77BF8005FCB7B /* 7.3mb.jpg in Resources */,
 				34F8F26E1DA8F4FB0046F5C3 /* duckling.jpg in Resources */,
 				34E7AEE41D911BF4007DA169 /* Main.storyboard in Resources */,
 			);
@@ -573,8 +675,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BD62121DA88D54004BF6AA /* EditVideoViewController.m in Sources */,
+				34EB7C0A1DB5BF1A005FCB7B /* TmpClass.m in Sources */,
 				34ABBFEF1D991ECF00B3CCA6 /* VideoPickerViewController.m in Sources */,
 				34DB35311D9A5BDF00F5E6A1 /* SVProgressAnimatedView.m in Sources */,
+				34EB7C571DB89738005FCB7B /* SSImageViewerViewController.m in Sources */,
 				340173591DAC87490099C030 /* ZYBImageHelper.m in Sources */,
 				34F8F2681DA8E03D0046F5C3 /* ScalarFilterParameter.swift in Sources */,
 				34F8F2651DA8E02C0046F5C3 /* ParameterAdjustmentView.swift in Sources */,
@@ -590,10 +694,14 @@
 				34F8F2691DA8E03D0046F5C3 /* FilteredImageView.swift in Sources */,
 				34DB35221D9A508600F5E6A1 /* ZYBVideoHelper.m in Sources */,
 				34F8F2711DA8F5B90046F5C3 /* PhotoFilterViewController.swift in Sources */,
+				34EB7C441DB770A5005FCB7B /* BigImageListViewController.m in Sources */,
+				34EB7C361DB754DE005FCB7B /* NSData+Encryption.m in Sources */,
 				34DB35341D9A5BDF00F5E6A1 /* SVRadialGradientLayer.m in Sources */,
 				34F8F2611DA8E0070046F5C3 /* FilterDetailViewController.swift in Sources */,
+				34EB7C3E1DB75D5F005FCB7B /* EnCryptoImageViewController.m in Sources */,
 				34F8F27D1DA8FA450046F5C3 /* FilterDesWebViewController.swift in Sources */,
 				34E7AEDB1D911BF4007DA169 /* main.m in Sources */,
+				34EB7C321DB74BF9005FCB7B /* CryptoViewController.m in Sources */,
 				34DB35331D9A5BDF00F5E6A1 /* SVProgressHUD.m in Sources */,
 				34ABBFED1D991ECF00B3CCA6 /* VideoDetailViewController.m in Sources */,
 			);
