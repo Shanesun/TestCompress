@@ -10,8 +10,12 @@
 #import "SSImageViewerViewController.h"
 
 @interface BigImageListViewController ()
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+@property (weak, nonatomic) IBOutlet UISlider *sliderView;
+@property (weak, nonatomic) IBOutlet UILabel *promatLabel;
 
 @property (strong, nonatomic) NSArray *bigImageArray;
+@property (strong, nonatomic) NSNumber *compressValue;
 
 @end
 
@@ -27,6 +31,8 @@
                            @"9.5mb.jpg",
                            @"12.5mb.jpg",
                            @"14.9mb.jpg"];
+    
+    self.compressValue = @(2);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,17 +66,36 @@
      NSLog(@"load end --- ");
     
     SSImageViewerViewController *vc = [[SSImageViewerViewController alloc] initWithImage:image];
+    vc.compressType = self.segmentControl.selectedSegmentIndex;
+    vc.compressValue = self.compressValue;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark- IBAction
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)segmentedChanged:(UISegmentedControl *)sender
+{
+    if (sender.selectedSegmentIndex == 0) {
+        self.sliderView.value = 0.2;
+       int mb = (int)(self.sliderView.value*10);
+        self.compressValue = @(mb);
+        self.promatLabel.text = [[NSString alloc] initWithFormat:@"%dMB",mb];
+    }
+    else{
+        self.sliderView.value = 0.9;
+         self.promatLabel.text = [[NSString alloc] initWithFormat:@"%.1f",self.sliderView.value];
+        self.compressValue = @(self.promatLabel.text.floatValue);
+    }
 }
-*/
+
+- (IBAction)valueChanged:(UISlider *)sender
+{
+    if (self.segmentControl.selectedSegmentIndex == 0) {
+        self.promatLabel.text = [[NSString alloc] initWithFormat:@"%dMB",(int)(sender.value*10)];
+    }
+    else{
+        self.promatLabel.text = [[NSString alloc] initWithFormat:@"%.1f",sender.value];
+    }
+}
 
 @end

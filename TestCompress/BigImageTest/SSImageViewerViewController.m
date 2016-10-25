@@ -8,6 +8,9 @@
 
 #import "SSImageViewerViewController.h"
 
+#import "ZYBImageHelper.h"
+#import "SVProgressHUD.h"
+
 #define kViewBounds CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)
 
 @interface SSImageViewerViewController ()
@@ -18,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewTrailingNC;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewBottomNC;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewTopNC;
+
+@property (nonatomic) BOOL hadLoadImage;
 
 
 @property (strong, nonatomic) UIImage *showImage;
@@ -34,12 +39,25 @@
     }
     return self;
 }
+
+- (void)configUI
+{
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 64, 44)];
+    [rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [rightButton setTitle:@"压缩" forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(compressButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self configUI];
     
     [self adaptZoomScrollView:self.scrollView
-             scrollViewBounds:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)
+             scrollViewBounds:kViewBounds
                       byImage:self.showImage];
     
     
@@ -57,7 +75,7 @@
           NSLog(@"load show -----%f",nowt-start);
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            
+            self.hadLoadImage = YES;
             self.photoImageView.image = newImage;
             NSTimeInterval now = CACurrentMediaTime();
             
@@ -75,6 +93,46 @@
 }
 
 #pragma mark- private meathods
+
+- (void)compressButtonClicked:(UIBarButtonItem *)sender
+{
+    if (!self.hadLoadImage) return;
+    
+    if (self.compressType == CompressTypeSize) {
+        float compressValue = self.compressValue.floatValue;
+        
+        float compressFactor = 0.9;
+        NSData *data = UIImageJPEGRepresentation(self.showImage, compressFactor);
+        NSLog(@"----- 原始大小：%fmb",data.length/(1024.0*1024.0));
+        
+         NSTimeInterval compressStart = CACurrentMediaTime();
+        while (compressFactor > 0 && data.length/(1024.0*1024.0) > compressValue) {
+            @autoreleasepool {
+                compressFactor = compressFactor - 0.1;
+                NSTimeInterval start = CACurrentMediaTime();
+                data = UIImageJPEGRepresentation(self.showImage, compressFactor);
+                NSTimeInterval now = CACurrentMediaTime();
+                NSLog(@"----- 压缩系数：%f,  压缩后的大小：%fmb, -- 耗时：%fs",compressFactor,data.length/(1024.0*1024.0),(now-start));
+            }
+        }
+        NSTimeInterval compressDone = CACurrentMediaTime();
+        NSLog(@"=========压缩后的大小：%fmb, 压缩处理时间：%fs",data.length/(1024.0*1024.0),(compressDone-compressStart));
+        
+        NSTimeInterval saveStart = CACurrentMediaTime();
+        [ZYBImageHelper saveImageToPhotoAlbum:[UIImage imageWithData:data] finishBlock:^(NSError *error) {
+            NSTimeInterval saveDone = CACurrentMediaTime();
+             NSLog(@"--------保存照片：%fs",(saveDone-saveStart));
+            [SVProgressHUD showInfoWithStatus:@"已经保存到相册"];
+            
+            
+        }];
+    }
+    else{
+        
+    }
+}
+
+#pragma mark 缩放
 - (void)adaptZoomScrollView:(UIScrollView *)scrollView scrollViewBounds:(CGRect)scrollViewBounds byImage:(UIImage *)image
 {
     float minZoom = MIN(scrollViewBounds.size.width / image.size.width,
@@ -86,7 +144,8 @@
     scrollView.zoomScale = minZoom;
     
 }
-// 更新 约束
+
+// 更新 约束，保持时刻居中
 - (void)updateConstraints
 {
     // 设置 imageView 上 左 下 右位置，使其居中

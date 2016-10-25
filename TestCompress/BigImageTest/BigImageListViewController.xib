@@ -8,6 +8,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigImageListViewController">
             <connections>
+                <outlet property="promatLabel" destination="PCp-cI-4iD" id="tmz-rQ-uSz"/>
+                <outlet property="segmentControl" destination="ixX-MN-gyB" id="U9c-yU-CwV"/>
+                <outlet property="sliderView" destination="41J-Qy-fcG" id="bH5-qS-7z0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,14 +26,57 @@
                         <outlet property="delegate" destination="-1" id="yMG-Tq-e4y"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mP-re-pHg">
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ixX-MN-gyB">
+                            <segments>
+                                <segment title="指定压缩后大小"/>
+                                <segment title="指定压缩系数"/>
+                            </segments>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="segmentedChanged:" destination="-1" eventType="valueChanged" id="Zga-Re-oiK"/>
+                            </connections>
+                        </segmentedControl>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="41J-Qy-fcG">
+                            <connections>
+                                <action selector="valueChanged:" destination="-1" eventType="valueChanged" id="7U9-jq-eb8"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2MB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="PCp-cI-4iD">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3Cz-Hn-Vz3"/>
+                                <constraint firstAttribute="width" constant="42" id="d72-Mn-rnK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ixX-MN-gyB" firstAttribute="centerX" secondItem="7mP-re-pHg" secondAttribute="centerX" id="Bq4-8m-r1g"/>
+                        <constraint firstItem="41J-Qy-fcG" firstAttribute="centerY" secondItem="PCp-cI-4iD" secondAttribute="centerY" id="CxA-by-RHq"/>
+                        <constraint firstItem="PCp-cI-4iD" firstAttribute="leading" secondItem="41J-Qy-fcG" secondAttribute="trailing" constant="30" id="GdD-WH-QKu"/>
+                        <constraint firstAttribute="bottom" secondItem="PCp-cI-4iD" secondAttribute="bottom" constant="12" id="NbT-Ir-YB1"/>
+                        <constraint firstAttribute="trailing" secondItem="PCp-cI-4iD" secondAttribute="trailing" constant="8" id="Sgg-P6-1Pc"/>
+                        <constraint firstItem="ixX-MN-gyB" firstAttribute="top" secondItem="7mP-re-pHg" secondAttribute="top" constant="8" id="fmI-KN-1S0"/>
+                        <constraint firstItem="41J-Qy-fcG" firstAttribute="leading" secondItem="7mP-re-pHg" secondAttribute="leading" constant="19" id="mnF-nS-tM7"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Mfz-4w-sYk" secondAttribute="bottom" id="7iK-TN-dPz"/>
+                <constraint firstAttribute="bottom" secondItem="7mP-re-pHg" secondAttribute="bottom" id="4df-Bc-itq"/>
+                <constraint firstAttribute="bottom" secondItem="Mfz-4w-sYk" secondAttribute="bottom" constant="90" id="7iK-TN-dPz"/>
+                <constraint firstAttribute="trailing" secondItem="7mP-re-pHg" secondAttribute="trailing" id="E6K-9F-AIk"/>
+                <constraint firstItem="7mP-re-pHg" firstAttribute="top" secondItem="Mfz-4w-sYk" secondAttribute="bottom" id="IL0-4E-Bm5"/>
                 <constraint firstItem="Mfz-4w-sYk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OuI-jb-Chc"/>
                 <constraint firstItem="Mfz-4w-sYk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tdt-tc-6Dd"/>
                 <constraint firstAttribute="trailing" secondItem="Mfz-4w-sYk" secondAttribute="trailing" id="UFV-pm-22K"/>
+                <constraint firstItem="7mP-re-pHg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cM1-5B-Mgj"/>
             </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>
