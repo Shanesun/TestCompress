@@ -10,7 +10,8 @@
 
 typedef enum : NSUInteger {
     CompressTypeSize = 0, // 指定 压缩后大小
-    CompressTypeFactor
+    CompressTypeFactor,
+    CompressTypeMixCompress
 } CompressType;
 
 @interface SSImageViewerViewController : UIViewController

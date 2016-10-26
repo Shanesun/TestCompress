@@ -98,38 +98,96 @@
 {
     if (!self.hadLoadImage) return;
     
-    if (self.compressType == CompressTypeSize) {
-        float compressValue = self.compressValue.floatValue;
-        
-        float compressFactor = 0.9;
-        NSData *data = UIImageJPEGRepresentation(self.showImage, compressFactor);
-        NSLog(@"----- 原始大小：%fmb",data.length/(1024.0*1024.0));
-        
-         NSTimeInterval compressStart = CACurrentMediaTime();
-        while (compressFactor > 0 && data.length/(1024.0*1024.0) > compressValue) {
-            @autoreleasepool {
-                compressFactor = compressFactor - 0.1;
-                NSTimeInterval start = CACurrentMediaTime();
-                data = UIImageJPEGRepresentation(self.showImage, compressFactor);
-                NSTimeInterval now = CACurrentMediaTime();
-                NSLog(@"----- 压缩系数：%f,  压缩后的大小：%fmb, -- 耗时：%fs",compressFactor,data.length/(1024.0*1024.0),(now-start));
+    switch (self.compressType) {
+        case CompressTypeSize:
+        {
+            float compressValue = self.compressValue.floatValue;
+            [SVProgressHUD showWithStatus:@"同步循环压缩中..."];
+            float compressFactor = 0.9;
+            NSData *data = UIImageJPEGRepresentation(self.showImage, compressFactor);
+            NSLog(@"----- 原始大小：%fmb",data.length/(1024.0*1024.0));
+            
+            NSTimeInterval compressStart = CACurrentMediaTime();
+            while (compressFactor > 0 && data.length/(1024.0*1024.0) > compressValue) {
+                @autoreleasepool {
+                    compressFactor = compressFactor - 0.1;
+                    NSTimeInterval start = CACurrentMediaTime();
+                    data = UIImageJPEGRepresentation(self.showImage, compressFactor);
+                    NSTimeInterval now = CACurrentMediaTime();
+                    NSLog(@"----- 压缩系数：%f,  压缩后的大小：%fmb, -- 耗时：%fs",compressFactor,data.length/(1024.0*1024.0),(now-start));
+                }
             }
+            NSTimeInterval compressDone = CACurrentMediaTime();
+            NSLog(@"=========压缩后的大小：%fmb, 压缩处理时间：%fs",data.length/(1024.0*1024.0),(compressDone-compressStart));
+            
+            NSTimeInterval saveStart = CACurrentMediaTime();
+            [ZYBImageHelper saveImageToPhotoAlbum:[UIImage imageWithData:data] finishBlock:^(NSError *error) {
+                if (error) {
+                    [SVProgressHUD showInfoWithStatus:@"保存失败"];
+                }
+                
+                [SVProgressHUD dismiss];
+                
+                NSTimeInterval saveDone = CACurrentMediaTime();
+                NSLog(@"--------保存照片：%fs",(saveDone-saveStart));
+                
+                NSString *promatString = [[NSString alloc] initWithFormat:@"压缩后的大小：%fmb\n压缩用时：%fs\n保存到相册用时：%fs",data.length/(1024.0*1024.0),(compressDone-compressStart),(saveDone-saveStart)];
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"已经保存到相册" message:promatString delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alertView show];
+                
+            }];
+            break;
         }
-        NSTimeInterval compressDone = CACurrentMediaTime();
-        NSLog(@"=========压缩后的大小：%fmb, 压缩处理时间：%fs",data.length/(1024.0*1024.0),(compressDone-compressStart));
+        case CompressTypeFactor:
+            break;
+            
+        case CompressTypeMixCompress:
+        {
+            UIImage *cropImage = [self cropImage:self.showImage];
+            float tmp = 0.45;
+            NSData *data = UIImageJPEGRepresentation(cropImage, tmp);
+            NSLog(@"---压缩：%fmb",data.length/(1024.0*1024.0));
+                 [ZYBImageHelper saveImageToPhotoAlbum:[UIImage imageWithData:data] finishBlock:^(NSError *error) {
+                     [SVProgressHUD showInfoWithStatus:@"保存成功"];
+                 }];
+            
+            break;
+        }
+    }
+}
+
+- (UIImage *)cropImage:(UIImage *)orignImage
+{
+    UIImage *newImage = orignImage;
+    CGSize cropResolution = CGSizeZero;
+    
+    CGFloat max = 0.0;
+    CGFloat scale = 0.0;
+    
+    // 分辨率小于 1280.0x1280.0
+    if (newImage.size.width <= 1280.0 &&
+        newImage.size.height <= 1280.0) {
+        return orignImage;
+    }
+    
+    if (newImage.size.width > newImage.size.height) {
+        max = newImage.size.width;
+        scale = newImage.size.width/1280.0;
         
-        NSTimeInterval saveStart = CACurrentMediaTime();
-        [ZYBImageHelper saveImageToPhotoAlbum:[UIImage imageWithData:data] finishBlock:^(NSError *error) {
-            NSTimeInterval saveDone = CACurrentMediaTime();
-             NSLog(@"--------保存照片：%fs",(saveDone-saveStart));
-            [SVProgressHUD showInfoWithStatus:@"已经保存到相册"];
-            
-            
-        }];
+        cropResolution.width = 1280.0;
+        cropResolution.height = newImage.size.height / scale;
     }
     else{
+        max = newImage.size.height;
+        scale = newImage.size.height/1280.0;
         
+        cropResolution.height = 1280.0;
+        cropResolution.width = newImage.size.width / scale;
     }
+    
+    newImage = [ZYBImageHelper cropImage:newImage toSize:cropResolution];
+    
+    return newImage;
 }
 
 #pragma mark 缩放

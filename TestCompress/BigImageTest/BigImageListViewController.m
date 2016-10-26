@@ -76,15 +76,21 @@
 - (IBAction)segmentedChanged:(UISegmentedControl *)sender
 {
     if (sender.selectedSegmentIndex == 0) {
+         self.sliderView.hidden = NO;
         self.sliderView.value = 0.2;
        int mb = (int)(self.sliderView.value*10);
         self.compressValue = @(mb);
         self.promatLabel.text = [[NSString alloc] initWithFormat:@"%dMB",mb];
     }
-    else{
+    else if(sender.selectedSegmentIndex == 1){
+        self.sliderView.hidden = NO;
         self.sliderView.value = 0.9;
          self.promatLabel.text = [[NSString alloc] initWithFormat:@"%.1f",self.sliderView.value];
         self.compressValue = @(self.promatLabel.text.floatValue);
+    }
+    else if(sender.selectedSegmentIndex == 2){
+        self.sliderView.hidden = YES;
+        self.compressValue = @(0);
     }
 }
 

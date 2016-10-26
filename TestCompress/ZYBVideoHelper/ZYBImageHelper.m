@@ -40,4 +40,17 @@
         }
     }];
 }
+
++ (UIImage *)cropImage:(UIImage *)orignImage toSize:(CGSize)resolution
+{
+    UIImage *newImage = nil;
+
+    UIGraphicsBeginImageContextWithOptions(resolution, YES, 1);
+    [orignImage drawInRect:CGRectMake(0, 0, resolution.width, resolution.height)];
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 @end

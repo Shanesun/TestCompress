@@ -546,12 +546,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestCompress/BigImageTest/SSImageViewerViewController.m"
-            timestampString = "499082526.82049"
+            timestampString = "499168517.593421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "-compressButtonClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestCompress/BigImageTest/SSImageViewerViewController.m"
+            timestampString = "499168517.593421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-cropImage:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

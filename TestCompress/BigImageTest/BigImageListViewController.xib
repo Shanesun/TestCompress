@@ -32,6 +32,7 @@
                             <segments>
                                 <segment title="指定压缩后大小"/>
                                 <segment title="指定压缩系数"/>
+                                <segment title="综合压缩"/>
                             </segments>
                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>

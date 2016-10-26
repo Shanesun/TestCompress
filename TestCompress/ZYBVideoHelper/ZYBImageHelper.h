@@ -15,4 +15,15 @@
 
 + (void)saveImageToPhotoAlbum:(UIImage *)image finishBlock:(void (^)(NSError *error)) finishBlock;
 
+
+/**
+ 缩放图片 到 制定分辨率
+
+ @param orignImage origin image
+ @param resolution you want crop resolution
+
+ @return new image
+ */
++ (UIImage *)cropImage:(UIImage *)orignImage toSize:(CGSize)resolution;
+
 @end
