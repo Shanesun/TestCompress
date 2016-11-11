@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		340173591DAC87490099C030 /* ZYBImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 340173581DAC87490099C030 /* ZYBImageHelper.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
+		344443E71DD5D44A000D843A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 344443E51DD5D44A000D843A /* 1.png */; };
+		344443E81DD5D44A000D843A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 344443E61DD5D44A000D843A /* 2.png */; };
 		349F463D1D9232D500065DDF /* TestALAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */; };
 		349F46FB1D92A3DD00065DDF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 349F46FA1D92A3DD00065DDF /* test.png */; };
 		34A4C8701DAB267A00714428 /* DIYImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A4C86E1DAB267A00714428 /* DIYImageViewController.m */; };
@@ -98,6 +100,8 @@
 /* Begin PBXFileReference section */
 		340173571DAC87490099C030 /* ZYBImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBImageHelper.h; sourceTree = "<group>"; };
 		340173581DAC87490099C030 /* ZYBImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBImageHelper.m; sourceTree = "<group>"; };
+		344443E51DD5D44A000D843A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		344443E61DD5D44A000D843A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		349F46201D9232D400065DDF /* TestALAssetsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestALAssetsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F46381D9232D500065DDF /* TestALAssetsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestALAssetsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F463C1D9232D500065DDF /* TestALAssetsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestALAssetsLibraryTests.m; sourceTree = "<group>"; };
@@ -379,6 +383,8 @@
 		34EB7C2E1DB74BE1005FCB7B /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				344443E51DD5D44A000D843A /* 1.png */,
+				344443E61DD5D44A000D843A /* 2.png */,
 				34EB7C371DB75AEC005FCB7B /* lena512.jpg */,
 				34EB7C381DB75AEC005FCB7B /* dribbble512.png */,
 				34EB7C2F1DB74BF9005FCB7B /* CryptoViewController.h */,
@@ -616,6 +622,8 @@
 				34EB7C331DB74BF9005FCB7B /* CryptoViewController.xib in Resources */,
 				34EB7C501DB77BF8005FCB7B /* 9.5mb.jpg in Resources */,
 				34EB7C021DB46CC8005FCB7B /* 秩序之光.png in Resources */,
+				344443E81DD5D44A000D843A /* 2.png in Resources */,
+				344443E71DD5D44A000D843A /* 1.png in Resources */,
 				34EB7C451DB770A5005FCB7B /* BigImageListViewController.xib in Resources */,
 				34E7AEE91D911BF4007DA169 /* LaunchScreen.storyboard in Resources */,
 				34F8F2811DA9DAF60046F5C3 /* PhotoFilterViewController.xib in Resources */,

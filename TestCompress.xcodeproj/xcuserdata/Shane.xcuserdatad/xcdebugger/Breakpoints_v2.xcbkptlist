@@ -567,7 +567,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "195"
             endingLineNumber = "195"
-            landmarkName = "-cropImage:"
+            landmarkName = "-adaptZoomScrollView:scrollViewBounds:byImage:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
